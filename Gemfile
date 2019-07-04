@@ -6,6 +6,11 @@ ruby '2.6.3'
 # Devise
 gem 'devise'
 
+#Bootstrap
+gem 'bootstrap', '~> 4.3.1'
+
+gem 'jquery-rails'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
