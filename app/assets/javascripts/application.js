@@ -17,3 +17,22 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+
+$(document).ready(function() {
+$(".menu-icon").on("click", function() {
+    $("nav ul").toggleClass("showing");
+});
+});
+
+// Scrolling Effect
+
+$(window).on("scroll", function() {
+    if($(window).scrollTop()) {
+        $('nav').addClass('yellow');
+
+    }
+
+    else {
+        $('nav').removeClass('yellow');
+    }
+});
