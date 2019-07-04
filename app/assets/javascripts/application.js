@@ -19,9 +19,9 @@
 //= require bootstrap-sprockets
 
 $(document).ready(function() {
-$(".menu-icon").on("click", function() {
-    $("nav ul").toggleClass("showing");
-});
+    $(".menu-icon").on("click", function() {
+        $("nav ul").toggleClass("showing");
+    });
 });
 
 // Scrolling Effect
@@ -29,10 +29,12 @@ $(".menu-icon").on("click", function() {
 $(window).on("scroll", function() {
     if($(window).scrollTop()) {
         $('nav').addClass('yellow');
+        $('a').addClass('black');
 
     }
 
     else {
         $('nav').removeClass('yellow');
+        $('a').removeClass('black');
     }
 });

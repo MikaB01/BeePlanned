@@ -3,7 +3,7 @@
     <i class="fa fa-bars fa-2x"></i>
   </div>
   <div class="logo">
-    BeePlanned
+    <%= image_tag 'logo/logo3.png', id: 'index_logo'%>
   </div>
   <div class="menu">
     <ul>
@@ -13,8 +13,9 @@
       <li><a href="#">Contact</a></li>
       <li><a href="#">Contact</a></li>
       <li>
-        <%= link_to 'Sign out <i class="fa fa-sign-out fa-2x" id="logout"></i>'.html_safe, destroy_user_session_path, method: :delete,
-                    style: 'color: darkgray; margin-right: 40px'%>
+        <%= link_to 'Sign out  <i class="fa fa-sign-out fa-lg" id="logout"></i>'.html_safe,
+                    destroy_user_session_path, method: :delete,
+                    id: 'index_sign_out'%>
       </li>
     </ul>
   </div>
