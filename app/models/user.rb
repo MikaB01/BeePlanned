@@ -8,6 +8,8 @@ class User < ApplicationRecord
   validates :username, presence: :true, uniqueness: { case_sensitive: false }, length: { minimum: 3 }
   validate :validate_username
 
+  has_many :locations
+
   attr_writer :login
 
   def login

@@ -16,3 +16,28 @@
  */
 
 @import "bootstrap";
+
+@font-face {
+  font-family: Hexergon;
+  src: font_url('iconian-fonts_hexgon/Hexgon-2xwv.otf');
+}
+
+@font-face {
+  font-family: HexergonBold;
+  src: font_url('iconian-fonts_hexgon/HexgonBold-7VLP.otf');
+}
+
+@font-face {
+  font-family: Hexergon3D;
+  src: font_url('iconian-fonts_hexgon/Hexgon3D-vWoA.otf');
+}
+
+@font-face {
+  font-family: HexergonRotated;
+  src: font_url('iconian-fonts_hexgon/HexgonRotated2-0Z9z.otf');
+}
+
+@font-face {
+  font-family: HexergonStaggered;
+  src: font_url('iconian-fonts_hexgon/HexgonStaggered2-WxjA.otf');
+}
