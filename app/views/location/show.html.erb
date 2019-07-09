@@ -1,0 +1,82 @@
+<%= javascript_include_tag "location", "data-turbolinks-track" => true  %>
+
+<div class="wrapper">
+  <header>
+    <%= render 'nav' %>
+    <div style="height: 200px"></div>
+    <div style="text-align: center">
+
+      <div id="new_location_comp">
+
+        <%= image_tag 'big_honeycomb3.png', id: 'img_new_location', class: 'zoomed'%>
+
+        <div id="new_location_form" class="transparent">
+
+          <div style="margin-bottom: 20px">
+            <i class="fa fa-times-circle fa-lg" id="close_add_form"></i>
+          </div>
+
+            <div class="form-add-location">
+              <h1 class="h3 mb-3 font-weight-normal", style="text-decoration: underline"><%= @location.name %></h1>
+
+              <div id="no-coordinate-input-form", style="text-align: left">
+                <div class="form-row">
+                  <div class="col">
+                    Country:
+                  </div>
+                  <div class="col">
+                    <%= @location.country %>
+                  </div>
+                  <div class="col">
+                    State:
+                  </div>
+                  <div class="col">
+                    <%= @location.state %>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col">
+                    Street:
+                  </div>
+                  <div class="col">
+                    <%= @location.street %>
+                  </div>
+                  <div class="col">
+                    Nr:
+                  </div>
+                  <div class="col">
+                    <%= @location.street_number %>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col">
+                    Zip:
+                  </div>
+                  <div class="col">
+                    <%= @location.zip_code %>
+                  </div>
+                  <div class="col">
+                    City:
+                  </div>
+                  <div class="col">
+                    <%= @location.city %>
+                  </div>
+                </div>
+              </div>
+
+              <div id="coordinate-input-form" class="hidden">
+                <%= @location.latitude %>
+                <%= @location.longitude %>
+              </div>
+
+            </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+</div>

@@ -17,6 +17,7 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+//= require location.js
 
 $(document).ready(function() {
     $(".menu-icon").on("click", function() {

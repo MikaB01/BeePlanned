@@ -1,0 +1,94 @@
+
+<div id="new_location_comp">
+
+<%= image_tag 'big_honeycomb3.png', id: 'img_new_location'%>
+    <div id="new_location_heading" class="show shown">
+    <h3> New </h3>
+    <h3> Location </h3>
+    <i class="fa fa-map-marker fa-2x"></i><i class="fa fa-plus-circle fa-xs"></i>
+  </div>
+
+  <div id="new_location_form" class="hide hidden transparent">
+
+    <div style="margin-bottom: 20px">
+      <i class="fa fa-times-circle fa-lg" id="close_add_form"></i>
+    </div>
+
+    <%= form_with model: @location, class: 'transparent', local: true do |f| %>
+
+      <div class="form-add-location">
+        <h1 class="h3 mb-3 font-weight-normal", style="text-decoration: underline">New Location</h1>
+
+        <div class="form-row">
+          <div class="col-2"></div>
+          <div class="col">
+            <%= f.text_field :name, autofocus: true,
+                             class: 'form-control',
+                             placeholder: 'Name',
+                             type: 'text',
+                             style: 'margin-bottom: 10px'%>
+          </div>
+          <div class="col-2"></div>
+        </div>
+
+        <div id="no-coordinate-input-form">
+          <div class="form-row">
+            <div class="col">
+              <%= f.text_field :country, class: 'form-control top', placeholder: 'Country', type: 'text' %>
+            </div>
+            <div class="col">
+              <%= f.text_field :state, class: 'form-control top', placeholder: 'State', type: 'text' %>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col">
+              <%= f.text_field :street, class: 'form-control middle', placeholder: 'Street', type: 'text' %>
+            </div>
+            <div class="col">
+              <%= f.text_field :street_number, class: 'form-control middle', placeholder: 'Nr.', type: 'text' %>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col">
+              <%= f.text_field :zip_code, class: 'form-control bottom', placeholder: 'Zip', type: 'text' %>
+            </div>
+            <div class="col">
+              <%= f.text_field :city, class: 'form-control bottom', placeholder: 'City', type: 'text' %>
+            </div>
+          </div>
+        </div>
+
+        <div id="coordinate-input-form" class="hidden">
+          <%= f.text_field :latitude, class: 'form-control top', placeholder: 'Latitude', type: 'text' %>
+          <%= f.text_field :longitude, class: 'form-control bottom', placeholder: 'Longitude', type: 'text' %>
+        </div>
+
+        <div class="form-row", style="margin-top: 10px; margin-bottom: 10px">
+          <div class="form-row" id="slider_row" style="color: #777; align: center">
+            <label class="switch" style="margin-bottom: 20px; margin-top: -5px">
+              <input type="checkbox" id="activate_coordinate_input">
+              <span class="slider"></span>
+            </label>
+            Coordinate input
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-3"></div>
+          <div class="col">
+            <div class="actions">
+             <%= f.submit "Add Location", class: 'btn', type: 'submit', id: 'add-location-submit'%>
+           </div>
+          </div>
+          <div class="col-3"></div>
+        </div>
+
+      </div>
+
+    <% end %>
+  </div>
+
+</div>
+
