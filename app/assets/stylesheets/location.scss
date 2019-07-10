@@ -44,6 +44,7 @@ nav {
   position: fixed;
   width: 100%;
   line-height: 60px;
+  z-index: 100;
 }
 
 nav ul {
@@ -142,6 +143,13 @@ nav ul li a#active {
   color: #f2d002;
 }
 
+#show_all_location_table{
+  max-width: 400px;
+  margin-top: -250px;
+  margin-left: -17px;
+  color: #f2d002;
+}
+
 #new_location_form input[type=text] {
   background-color: transparent;
   border-color: #f2d002;
@@ -153,15 +161,20 @@ nav ul li a#active {
   zoom: 22%;
 }
 
+#img_show_all_location{
+  z-index: -10;
+  zoom: 22%;
+}
+
 .zoomed {
   animation-name: zoom_it;
   animation-duration: 0.8s;
-  transform: scale(3,3);
+  transform: scale(3.5,3.5);
 }
 
 @keyframes zoom_it {
   0%   {transform: scale(1,1);}
-  100% {transform: scale(3,3);}
+  100% {transform: scale(3.5,3.5);}
 }
 
 .unzoomed {
@@ -171,7 +184,7 @@ nav ul li a#active {
 }
 
 @keyframes unzoom_it {
-  0%   {transform: scale(3,3);}
+  0%   {transform: scale(3.5,3.5);}
   100% {transform: scale(1,1);}
 }
 
@@ -207,9 +220,19 @@ nav ul li a#active {
 .shown {width: initial; height: initial}
 
 div #new_location_comp {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   max-width: 400px;
+  max-height: 158px;
+}
+
+div #show_all_location_comp {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  max-height: 158px;
 }
 
 div #new_location_heading {
@@ -218,6 +241,22 @@ div #new_location_heading {
   margin-left: 115px;
   max-width: 160px;
   color: #f2d002;
+}
+
+#new_location_heading:hover {
+  text-decoration: underline;
+}
+
+div #show_all_location_heading {
+  text-align: center;
+  margin-top: -150px;
+  margin-left: 115px;
+  max-width: 160px;
+  color: #f2d002;
+}
+
+#show_all_location_heading:hover {
+  text-decoration: underline;
 }
 
 .transparent {
@@ -255,6 +294,31 @@ input[type=text].bottom {
   margin-top: -1px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+}
+
+//Table
+table {
+  font-size: 18px;
+  width: 400px;
+}
+
+tr.location_table_cell {
+  border: 2px #f2d002 solid;
+  border-radius: 50px;
+  color: #777;
+}
+
+tr.location_table_cell td{
+  padding: 4px;
+}
+
+tr#show_all_location_table_th {
+  font-size: 22px;
+  color: #f2d002;
+}
+
+th {
+  padding: 15px;
 }
 
 //Slider

@@ -1,3 +1,4 @@
+//New Location
 $(document).on("mouseenter", '#new_location_comp', function(){
     $('#close_add_form').css("color", "#34322c");
 });
@@ -12,6 +13,23 @@ $(document).on("mouseleave", '#new_location_comp', function(){
 
 $(document).on("mouseleave", '#close_add_form', function(){
     $('#close_add_form').css("color", "#34322c");
+});
+
+//All Locations
+$(document).on("mouseenter", '#show_all_location_comp', function(){
+    $('#close_show_all_table').css("color", "#34322c");
+});
+
+$(document).on("mouseenter", '#close_show_all_table', function(){
+    $('#close_show_all_table').css("color", "#f2d002");
+});
+
+$(document).on("mouseleave", '#show_all_location_comp', function(){
+    $('#close_show_all_table').css("color", "transparent");
+});
+
+$(document).on("mouseleave", '#close_show_all_table', function(){
+    $('#close_show_all_table').css("color", "#34322c");
 });
 
 /*
@@ -43,10 +61,26 @@ $(document).on("click", '#close_add_form', function(){
     switch_active_class(document.getElementById('new_location_form'), 'show_form', 'hide');
 });
 
+$(document).on("click", '#close_show_all_table', function(){
+    switch_active_class(document.getElementById('img_show_all_location'), 'zoomed', 'unzoomed');
+    switch_active_class(document.getElementById('show_all_location_heading'), 'show', 'hide');
+    switch_active_class(document.getElementById('show_all_location_table'), 'show_form', 'hide');
+});
+
 $(document).on("click", '#new_location_heading', function(){
     switch_active_class(document.getElementById('img_new_location'), 'zoomed', 'unzoomed');
     switch_active_class(document.getElementById('new_location_heading'), 'show', 'hide');
     switch_active_class(document.getElementById('new_location_form'), 'show_form', 'hide');
+    $('#show_all_location_comp').css("z-index", "0");
+    $('#new_location_comp').css("z-index", "10");
+});
+
+$(document).on("click", '#show_all_location_heading', function(){
+    switch_active_class(document.getElementById('img_show_all_location'), 'zoomed', 'unzoomed');
+    switch_active_class(document.getElementById('show_all_location_heading'), 'show', 'hide');
+    switch_active_class(document.getElementById('show_all_location_table'), 'show_form', 'hide');
+    $('#new_location_comp').css("z-index", "0");
+    $('#show_all_location_comp').css("z-index", "10");
 });
 
 function switch_active_class( element, class_name1, class_name2) {
