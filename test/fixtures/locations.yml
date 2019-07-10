@@ -4,7 +4,7 @@ one:
   name: MyString
   country: MyString
   state: MyString
-  zipcode: 
+  zip_code:
   city: MyString
   street: MyString
   street_number: MyString
@@ -15,7 +15,7 @@ two:
   name: MyString
   country: MyString
   state: MyString
-  zipcode: 
+  zip_code:
   city: MyString
   street: MyString
   street_number: MyString
