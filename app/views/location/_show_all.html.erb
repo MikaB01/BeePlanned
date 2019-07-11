@@ -14,9 +14,9 @@
       <i class="fa fa-times-circle fa-lg" id="close_show_all_table"></i>
     </div>
 
-    <h1 class="h3 mb-3 font-weight-normal", style="text-decoration: underline">Show all Locations</h1>
+      <h1 class="h3 mb-3 font-weight-normal", style="text-decoration: underline">Show all Locations</h1>
 
-    <table>
+    <table class="separate" id="show_all_table">
 
       <tr class="top" id="show_all_location_table_th">
         <th>Name</th>
@@ -25,11 +25,13 @@
       </tr>
 
       <% @locations.each do |location| %>
-        <tr class="location_table_cell">
+
+        <tr onclick="location.href= '<%= location_path(location.id) %>'" class="location_table_cell reset_all">
           <td><%= location.name %></td>
           <td><%= location.country %></td>
           <td><%= location.state %></td>
         </tr>
+
       <% end %>
 
     </table>
