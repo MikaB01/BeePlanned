@@ -56,7 +56,24 @@ $(document).ready(function () {
     });
 
     $(document).on("mouseleave", '#close_show_all_table', function () {
-        $('#close_show_all_table').css("color", "#34322c");
+        $('#back_button').css("color", "#34322c");
+    });
+
+    //Show Locations
+    $(document).on("mouseenter", '#show_location_comp', function () {
+        $('#back_button').css("color", "#34322c");
+    });
+
+    $(document).on("mouseenter", '#back_button', function () {
+        $('#back_button').css("color", "#f2d002");
+    });
+
+    $(document).on("mouseleave", '#show_location_comp', function () {
+        $('#back_button').css("color", "transparent");
+    });
+
+    $(document).on("mouseleave", '#back_button', function () {
+        $('#back_button').css("color", "#34322c");
     });
 
     $('#activate_coordinate_input').on("click", function () {

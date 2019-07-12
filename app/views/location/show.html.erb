@@ -12,7 +12,9 @@
 
         <div id="show_location_table" class="transparent show">
 
-          <h1 class="h3 mb-3 font-weight-normal", style="text-decoration: underline"><%= @location.name %></h1>
+          <%= link_to '<i class="fa fa-arrow-circle-left fa-lg"></i>'.html_safe, :back, style: "color: transparent", id: "back_button" %>
+
+          <h1 class="h3 mb-3 font-weight-normal", style="margin-top: 20px; text-decoration: underline"><%= @location.name %></h1>
 
           <table class="separate" id="show_table">
 
