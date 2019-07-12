@@ -13,15 +13,29 @@ class LocationController < ApplicationController
   end
 
   def create
-    @location = Location.new(location_params)
+    puts params[:longitude]
+    if params[:latitude] != "" && params[:longitude] != ""
+      if params[:country] != "" && params[:state] != ""
+        @location = Location.new(location_params)
+      else
+        @location = Location.new(location_coordinates_params)
+      end
+    else if params[:country] && params[:state] && params[:zip_code] && params[:city] && params[:street] && params[:street_number]
+           @location = Location.new(location_address_params)
+         else
+           flash["Location not Valid"]
+         end
+    end
 
     @location.user_id = current_user.id
+
 
     if @location.save
       redirect_to @location
     else
-      render 'new'
+      flash.alert = "Wrong data!"
     end
+
   end
 
   def update
@@ -48,6 +62,12 @@ class LocationController < ApplicationController
 
   private
   def location_params
+    params.permit(:name, :country, :state, :zip_code, :city, :street, :street_number, :latitude, :longitude)
+  end
+  def location_address_params
     params.permit(:name, :country, :state, :zip_code, :city, :street, :street_number)
+  end
+  def location_coordinates_params
+    params.permit(:name, :latitude, :longitude)
   end
 end

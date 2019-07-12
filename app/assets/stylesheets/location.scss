@@ -343,13 +343,16 @@ table#show_table {
   text-align: left;
   width: 500px;
   max-width: 500px;
-  table-layout: fixed;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   -o-hyphens: auto;
   hyphens: auto;
 }
+
+table#show_table td { max-width: 130px; width: 130px }
+table#show_table td.smaller_td { max-width: 60px; width: 60px}
+table#show_table td.small_td { max-width: 80px; width: 80px}
 
 table.separate td {
   padding: 5px 12px;
@@ -370,6 +373,7 @@ table.separate tr:first-child td:last-child { border-top-right-radius:10px }
 table#show_all_table tr:hover td{
   color: #f2d002 !important;
 }
+
 
 //Slider
 .switch input {

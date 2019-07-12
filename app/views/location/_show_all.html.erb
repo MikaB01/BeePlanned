@@ -14,9 +14,8 @@
       <i class="fa fa-times-circle fa-lg" id="close_show_all_table"></i>
     </div>
 
-      <h1 class="h3 mb-3 font-weight-normal", style="text-decoration: underline">Show all Locations</h1>
+    <table class="separate" id="show_all_table" style="margin-top: -30px; margin-left: -22px">
 
-    <table class="separate" id="show_all_table">
 
       <tr class="top" id="show_all_location_table_th">
         <th>Name</th>
@@ -24,17 +23,49 @@
         <th>State</th>
       </tr>
 
+
       <% @locations.each do |location| %>
 
-        <tr onclick="location.href= '<%= location_path(location.id) %>'" class="location_table_cell reset_all">
-          <td><%= location.name %></td>
-          <td><%= location.country %></td>
-          <td><%= location.state %></td>
+        <% if location.country && location.state %>
+          <tr onclick="location.href= '<%= location_path(location.id) %>'" class="location_table_cell reset_all">
+            <td><%= location.name %></td>
+            <td><%= location.country %></td>
+            <td><%= location.state %></td>
+          </tr>
+        <% end %>
+
+      <% end %>
+
+      <% @coordinates_table_shown = false %>
+
+      <% @locations.each do |location| %>
+        <% if (location.latitude && location.longitude) && (!location.country && !location.state)%>
+          <% @coordinates_table_shown = true %>
+        <% end %>
+      <% end %>
+
+      <% if @coordinates_table_shown %>
+        <tr class="top" id="show_all_location_table_th">
+          <th>Name</th>
+          <th>Latitude</th>
+          <th>Longitude</th>
         </tr>
+      <% end %>
+
+      <% @locations.each do |location| %>
+
+        <% if (location.latitude && location.longitude) && (!location.country && !location.state)%>
+          <tr onclick="location.href= '<%= location_path(location.id) %>'" class="location_table_cell reset_all">
+            <td><%= location.name %></td>
+            <td><%= location.latitude %></td>
+            <td><%= location.longitude %></td>
+          </tr>
+        <% end %>
 
       <% end %>
 
     </table>
+
   </div>
 
 </div>

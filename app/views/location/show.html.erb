@@ -10,34 +10,40 @@
 
         <%= image_tag 'big_honeycomb3.png', id: 'img_show_location', class: 'zoomed'%>
 
-        <div id="show_location_table" class="transparent">
+        <div id="show_location_table" class="transparent show">
 
           <h1 class="h3 mb-3 font-weight-normal", style="text-decoration: underline"><%= @location.name %></h1>
 
           <table class="separate" id="show_table">
 
-            <tr>
-              <td>Country:</td>
-              <td><%= @location.country %></td>
-              <td>State:</td>
-              <td><%= @location.state %></td>
-            </tr>
+            <% if @location.country || @location.state %>
+              <tr>
+                <td class="small_td">Country:</td>
+                <td><%= @location.country %></td>
+                <td class="smaller_td">State:</td>
+                <td><%= @location.state %></td>
+              </tr>
+            <% end %>
 
-            <tr>
-              <td>Street:</td>
-              <td><%= @location.street %></td>
-              <td>Nr:</td>
-              <td><%= @location.street_number %></td>
-            </tr>
+            <% if @location.city || @location.zip_code %>
+              <tr>
+                <td class="small_td">Street:</td>
+                <td><%= @location.street %></td>
+                <td class="smaller_td">Nr:</td>
+                <td><%= @location.street_number %></td>
+              </tr>
+            <% end %>
 
-            <tr>
-              <td>Zip:</td>
-              <td><%= @location.zip_code %></td>
-              <td>City:</td>
-              <td><%= @location.city %></td>
-            </tr>
+            <% if @location.street || @location.street_number %>
+              <tr>
+                <td class="small_td">Zip:</td>
+                <td><%= @location.zip_code %></td>
+                <td class="smaller_td">City:</td>
+                <td><%= @location.city %></td>
+              </tr>
+            <% end %>
 
-            <% if @location.latitude. && @location.longitude %>
+            <% if @location.latitude || @location.longitude %>
               <tr>
                 <td>Latitude:</td>
                 <td><%= @location.latitude %></td>
