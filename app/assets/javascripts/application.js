@@ -18,8 +18,11 @@
 //= require popper
 //= require bootstrap-sprockets
 //= require location.js
+//= require hive.js
 
 $(document).ready(function() {
+    $('#colorselector').colorselector();
+
     $(".menu-icon").on("click", function() {
         $("nav ul").toggleClass("showing");
     });
