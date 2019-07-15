@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hive_number: 1
+  colony_type: MyString
+  year_color: 1
+  colony_created_at: 2019-07-15
+  queen_added_at: 2019-07-15
+  breed: MyString
+  hive_type: MyString
+
+two:
+  hive_number: 1
+  colony_type: MyString
+  year_color: 1
+  colony_created_at: 2019-07-15
+  queen_added_at: 2019-07-15
+  breed: MyString
+  hive_type: MyString

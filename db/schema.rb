@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_05_085942) do
+ActiveRecord::Schema.define(version: 2019_07_15_103926) do
+
+  create_table "hives", force: :cascade do |t|
+    t.integer "hive_number"
+    t.string "colony_type"
+    t.integer "year_color"
+    t.date "colony_created_at"
+    t.date "queen_added_at"
+    t.string "breed"
+    t.string "hive_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "location_id"
+    t.index ["location_id"], name: "index_hives_on_location_id"
+  end
 
   create_table "locations", force: :cascade do |t|
     t.string "name"
