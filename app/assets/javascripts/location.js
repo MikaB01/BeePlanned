@@ -56,7 +56,7 @@ $(document).ready(function () {
     });
 
     $(document).on("mouseleave", '#close_show_all_table', function () {
-        $('#back_button').css("color", "#34322c");
+        $('#close_show_all_table').css("color", "#34322c");
     });
 
     //Show Locations

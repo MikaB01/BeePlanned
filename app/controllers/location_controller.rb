@@ -18,8 +18,7 @@ class LocationController < ApplicationController
       if params[:country] != "" && params[:state] != ""
         @location = Location.new(location_params)
       else
-        @location = Location.new(location_coordinates_params)
-      end
+c      end
     else if params[:country] && params[:state] && params[:zip_code] && params[:city] && params[:street] && params[:street_number]
            @location = Location.new(location_address_params)
          else
