@@ -25,7 +25,7 @@
               <div class="input-group-prepend" style="width: 80px">
                 <%= f.text_field :hive_number, autofocus: true, class: 'form-control', placeholder: 'Nr.', type: 'text', style: 'text-align: center; margin-right: 10px'%>
               </div>
-              <%= f.select :country_id, options_for_select(@locations.map{ |l| [l.name, l.id] }), {:prompt => 'Select Location'}, class: 'form-control' %>
+              <%= f.select :location_id, options_for_select(@locations.map{ |l| [l.name, l.id] }), {:prompt => 'Select Location'}, class: 'form-control' %>
             </div>
           </div>
           <div class="col-2"></div>
@@ -67,13 +67,14 @@
                 <div class="dropdown">
                   <button class="btn _select_color dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #f2d002">Select year color</button>
                   <ul class="dropdown-menu _select_color_drop" aria-labelledby="dropdownMenu1">
-                    <li><span _text_display="White" class="color white"></span></li>
-                    <li><span _text_display="Yellow" class="color yellow"></span></li>
-                    <li><span _text_display="Red" class="color red"></span></li>
-                    <li><span _text_display="Green" class="color green"></span></li>
-                    <li><span _text_display="Blue" class="color blue"></span></li>
+                    <li><span _text_display="White"  _value=0 class="color white"></span></li>
+                    <li><span _text_display="Yellow" _value=1 class="color yellow"></span></li>
+                    <li><span _text_display="Red"    _value=2 class="color red"></span></li>
+                    <li><span _text_display="Green"  _value=3 class="color green"></span></li>
+                    <li><span _text_display="Blue"   _value=4 class="color blue"></span></li>
                   </ul>
                 </div>
+                <%= f.hidden_field :year_color%>
               </div>
             </div>
           </div>

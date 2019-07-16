@@ -13,12 +13,10 @@ class LocationController < ApplicationController
   end
 
   def create
-    puts params[:longitude]
     if params[:latitude] != "" && params[:longitude] != ""
       if params[:country] != "" && params[:state] != ""
         @location = Location.new(location_params)
-      else
-c      end
+      end
     else if params[:country] && params[:state] && params[:zip_code] && params[:city] && params[:street] && params[:street_number]
            @location = Location.new(location_address_params)
          else

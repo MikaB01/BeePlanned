@@ -5,6 +5,7 @@ $(document).ready(function () {
     for (var i = _colors.length - 1; i >= 0; i--) {
         $(_colors[i]).click(function(){
             var color_text = $(this).find('span').attr('_text_display');
+            document.getElementById('year_color').value = $(this).find('span').attr('_value');
             var elemnt = $(this).closest('._select_color_drop').prev();
             elemnt.find('span.color').remove();
             $(this).find('span').clone().appendTo(elemnt);

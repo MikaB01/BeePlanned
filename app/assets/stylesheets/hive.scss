@@ -1,6 +1,5 @@
 *:focus {
   outline:0px !important;
-  -webkit-appearance:none;
   box-shadow: none !important;
 }
 
@@ -492,7 +491,6 @@ div .dropdown {
   height: 38px;
 }
 
-._select_color_drop > li > .transparent ,.btn._select_color > span.LIME{background-color: transparent;}
 ._select_color_drop > li > .white ,.btn._select_color > span.white{background-color: white;}
 ._select_color_drop > li > .red ,.btn._select_color > span.red{background-color: red;}
 ._select_color_drop > li > .green ,.btn._select_color > span.green{background-color: green;}
