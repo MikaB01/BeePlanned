@@ -1,0 +1,22 @@
+<nav>
+  <div class="menu-icon">
+    <i class="fa fa-bars fa-2x"></i>
+  </div>
+  <div class="logo">
+    <%= image_tag 'logo/logo3.png', id: 'index_logo'%>
+  </div>
+  <div class="menu">
+    <ul>
+      <li><a href="/" class="reset_all">Home</a></li>
+      <li><a href="/location" id="active" class="reset_all">Locations</a></li>
+      <li><a href="/hive" class="reset_all">Hives</a></li>
+      <li><a href="#" class="reset_all">Contact</a></li>
+      <li><a href="#" class="reset_all">Contact</a></li>
+      <li>
+        <%= link_to 'Sign out  <i class="fa fa-sign-out fa-lg" id="logout"></i>'.html_safe,
+                    destroy_user_session_path, method: :delete,
+                    id: 'index_sign_out'%>
+      </li>
+    </ul>
+  </div>
+</nav>

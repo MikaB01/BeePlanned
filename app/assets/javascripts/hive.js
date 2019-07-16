@@ -1,5 +1,36 @@
 $(document).ready(function () {
 
+    //Colorpicker
+    _colors=$('._select_color_drop li');
+    for (var i = _colors.length - 1; i >= 0; i--) {
+        $(_colors[i]).click(function(){
+            var color_text = $(this).find('span').attr('_text_display');
+            var elemnt = $(this).closest('._select_color_drop').prev();
+            elemnt.find('span.color').remove();
+            $(this).find('span').clone().appendTo(elemnt);
+            var contents = $(elemnt).contents();
+            if (contents.length > 0) {
+                if (contents.get(0).nodeType == Node.TEXT_NODE) {
+                    $(elemnt).html(color_text).append(contents.slice(1));
+                }
+            }
+            if($('[name=_color]').val() == undefined){
+                elemnt.next().append("<input type='hidden' name='_color' value='"+color_text+"'>");
+            }else{
+                $('[name=_color]').val(color_text);
+            }
+
+        })
+    };
+
+    $('#dropdownMenu1').click(function () {
+        document.getElementById('dropdownMenu1').classList.add('hidden');
+    });
+
+    $('.color').click(function () {
+        document.getElementById('dropdownMenu1').classList.remove('hidden');
+    });
+
     $('.reset_all').click(function () {
         $(document).css("all", "initial");
         document.getElementById('img_new_hive').classList.remove('zoomed');
