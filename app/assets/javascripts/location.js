@@ -73,6 +73,7 @@ $(document).ready(function () {
         document.getElementById('location_name_unzoomed').classList.add('hidden');
         switch_active_class(document.getElementById('img_show_location'), 'zoomed_show', 'unzoomed_show');
         switch_active_class(document.getElementById('show_location_table'), 'show_form', 'hide');
+        document.getElementById('new_hive_comp').classList.add("hidden");
     });
 
     $(document).on("mouseleave", '#show_location_comp', function () {
@@ -86,9 +87,11 @@ $(document).ready(function () {
     $(document).on("click", '#close_show', function () {
         switch_active_class(document.getElementById('img_show_location'), 'zoomed_show', 'unzoomed_show');
         switch_active_class(document.getElementById('show_location_table'), 'show_form', 'hide');
+        document.getElementById('show_location_table').classList.add('hidden');
         document.getElementById('location_name_unzoomed').classList.remove('hide');
         document.getElementById('location_name_unzoomed').classList.add('show');
         document.getElementById('location_name_unzoomed').classList.remove('hidden');
+        document.getElementById('new_hive_comp').classList.remove("hidden");
     });
 
 

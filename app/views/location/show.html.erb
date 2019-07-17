@@ -10,62 +10,9 @@
 
     <div style="text-align: center">
 
-      <div id="show_location_comp">
+      <%= render 'show_location_comb' %>
 
-        <%= image_tag 'big_honeycomb3.png', id: 'img_show_location'%>
-        <h1 class="h3 mb-3 font-weight-normal show" id="location_name_unzoomed"><%= @location.name %></h1>
-
-        <div id="show_location_table" class="transparent hidden hide">
-
-          <i class="fa fa-times-circle fa-lg" id="close_show"></i>
-
-          <h1 class="h3 mb-3 font-weight-normal" style="margin-top: 20px; text-decoration: underline" id="location_name_zoomed"><%= @location.name %></h1>
-
-          <table class="separate" id="show_table">
-
-            <% if @location.country || @location.state %>
-              <tr>
-                <td class="small_td">Country:</td>
-                <td><%= @location.country %></td>
-                <td class="smaller_td">State:</td>
-                <td><%= @location.state %></td>
-              </tr>
-            <% end %>
-
-            <% if @location.city || @location.zip_code %>
-              <tr>
-                <td class="small_td">Street:</td>
-                <td><%= @location.street %></td>
-                <td class="smaller_td">Nr:</td>
-                <td><%= @location.street_number %></td>
-              </tr>
-            <% end %>
-
-            <% if @location.street || @location.street_number %>
-              <tr>
-                <td class="small_td">Zip:</td>
-                <td><%= @location.zip_code %></td>
-                <td class="smaller_td">City:</td>
-                <td><%= @location.city %></td>
-              </tr>
-            <% end %>
-
-            <% if @location.latitude || @location.longitude %>
-              <tr>
-                <td>Latitude:</td>
-                <td><%= @location.latitude %></td>
-                <td>Longitude:</td>
-                <td><%= @location.longitude %></td>
-              </tr>
-            <% end %>
-
-          </table>
-
-        </div>
-
-      </div>
-
-      <div style="margin-top: 200px; text-align: center">
+      <div style="margin-top: 100px; align: center">
         <%= render 'hive/new' %>
       </div>
 

@@ -122,6 +122,7 @@ $(document).ready(function () {
         switch_active_class(document.getElementById('img_new_hive'), 'zoomed', 'unzoomed');
         switch_active_class(document.getElementById('new_hive_heading'), 'show', 'hide');
         switch_active_class(document.getElementById('new_hive_form'), 'show_form', 'hide');
+        document.getElementById('show_location_comp').classList.remove("hidden");
     });
 
     $('#close_show_all_table').on("click", function () {
@@ -136,6 +137,7 @@ $(document).ready(function () {
         switch_active_class(document.getElementById('new_hive_form'), 'show_form', 'hide');
         $('#show_all_location_comp').css("z-index", "0");
         $('#new_hive_comp').css("z-index", "10");
+        document.getElementById('show_location_comp').classList.add("hidden");
         return false;
     });
 
