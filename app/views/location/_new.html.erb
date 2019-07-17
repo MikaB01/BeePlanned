@@ -14,7 +14,7 @@
       <i class="fa fa-times-circle fa-lg" id="close_add_form"></i>
     </div>
 
-    <%= form_with model: @location, class: 'transparent', local: true do |f| %>
+    <%= form_with model: @location, :url => "/location", class: 'transparent', local: true do |f| %>
 
       <div class="form-add-location">
         <h1 class="h3 mb-3 font-weight-normal", style="text-decoration: underline">New Location</h1>

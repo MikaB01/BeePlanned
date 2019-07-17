@@ -1,20 +1,25 @@
 <%= javascript_include_tag "location", "data-turbolinks-track" => true  %>
+<%= javascript_include_tag "hive", "data-turbolinks-track" => true  %>
 
 <div class="wrapper">
   <header>
-    <%= render 'nav' %>
-    <div style="height: 300px"></div>
+
+    <div style="height: 190px"></div>
+
+    <%= link_to '<i class="fa fa-arrow-circle-left fa-2x"></i>'.html_safe, :back, style: "color: #34322c", id: "back_button" %>
+
     <div style="text-align: center">
 
       <div id="show_location_comp">
 
-        <%= image_tag 'big_honeycomb3.png', id: 'img_show_location', class: 'zoomed'%>
+        <%= image_tag 'big_honeycomb3.png', id: 'img_show_location'%>
+        <h1 class="h3 mb-3 font-weight-normal show" id="location_name_unzoomed"><%= @location.name %></h1>
 
-        <div id="show_location_table" class="transparent show">
+        <div id="show_location_table" class="transparent hidden hide">
 
-          <%= link_to '<i class="fa fa-arrow-circle-left fa-lg"></i>'.html_safe, :back, style: "color: transparent", id: "back_button" %>
+          <i class="fa fa-times-circle fa-lg" id="close_show"></i>
 
-          <h1 class="h3 mb-3 font-weight-normal", style="margin-top: 20px; text-decoration: underline"><%= @location.name %></h1>
+          <h1 class="h3 mb-3 font-weight-normal" style="margin-top: 20px; text-decoration: underline" id="location_name_zoomed"><%= @location.name %></h1>
 
           <table class="separate" id="show_table">
 
@@ -60,6 +65,11 @@
 
       </div>
 
+      <div style="margin-top: 200px; text-align: center">
+        <%= render 'hive/new' %>
+      </div>
+
     </div>
+
   </header>
 </div>

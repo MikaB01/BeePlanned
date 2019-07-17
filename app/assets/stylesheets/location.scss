@@ -157,6 +157,16 @@ nav ul li a#active {
   margin-top: -290px;
   margin-left: -17px;
   color: #f2d002;
+  z-index: 20;
+}
+
+#location_name_unzoomed {
+  position: relative;
+  margin-top: -150px !important;
+  margin-left: -15px;
+  color: #f2d002;
+  font-size: 34px;
+  text-decoration: underline;
   z-index: 10;
 }
 
@@ -177,8 +187,19 @@ nav ul li a#active {
 }
 
 #img_show_location{
-  z-index: -20;
-  zoom: 22%;
+  z-index: -10;
+  zoom: 30%;
+}
+
+.zoomed_show {
+  animation-name: zoom_show_it;
+  animation-duration: 0.8s;
+  transform: scale(2.5,2.5);
+}
+
+@keyframes zoom_show_it {
+  0%   {transform: scale(1,1);}
+  100% {transform: scale(2.5,2.5);}
 }
 
 .zoomed {
@@ -190,6 +211,17 @@ nav ul li a#active {
 @keyframes zoom_it {
   0%   {transform: scale(1,1);}
   100% {transform: scale(3.5,3.5);}
+}
+
+.unzoomed_show {
+  animation-name: unzoom_show_it;
+  animation-duration: 0.4s;
+  transform: scale(1,1);
+}
+
+@keyframes unzoom_show_it {
+  0%   {transform: scale(2.5,2.5);}
+  100% {transform: scale(1,1);}
 }
 
 .unzoomed {

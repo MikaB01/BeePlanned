@@ -10,7 +10,7 @@
   <div id="new_hive_form" class="hide hidden transparent">
 
     <div style="margin-bottom: 20px">
-      <i class="fa fa-times-circle fa-lg" id="close_add_form"></i>
+      <i class="fa fa-times-circle fa-lg" id="close_add_hive_form"></i>
     </div>
 
     <%= form_with model: @hive, class: 'transparent', local: true do |f| %>
@@ -67,11 +67,11 @@
                 <div class="dropdown">
                   <button class="btn _select_color dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #f2d002">Select year color</button>
                   <ul class="dropdown-menu _select_color_drop" aria-labelledby="dropdownMenu1">
-                    <li><span _text_display="White"  _value=0 class="color white"></span></li>
-                    <li><span _text_display="Yellow" _value=1 class="color yellow"></span></li>
-                    <li><span _text_display="Red"    _value=2 class="color red"></span></li>
-                    <li><span _text_display="Green"  _value=3 class="color green"></span></li>
-                    <li><span _text_display="Blue"   _value=4 class="color blue"></span></li>
+                    <li><span data-text-display="White"  data-value=0 class="color white"></span></li>
+                    <li><span data-text-display="Yellow" data-value=1 class="color yellow"></span></li>
+                    <li><span data-text-display="Red"    data-value=2 class="color red"></span></li>
+                    <li><span data-text-display="Green"  data-value=3 class="color green"></span></li>
+                    <li><span data-text-display="Blue"   data-value=4 class="color blue"></span></li>
                   </ul>
                 </div>
                 <%= f.hidden_field :year_color%>

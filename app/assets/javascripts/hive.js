@@ -4,8 +4,8 @@ $(document).ready(function () {
     _colors=$('._select_color_drop li');
     for (var i = _colors.length - 1; i >= 0; i--) {
         $(_colors[i]).click(function(){
-            var color_text = $(this).find('span').attr('_text_display');
-            document.getElementById('year_color').value = $(this).find('span').attr('_value');
+            var color_text = $(this).find('span').attr('data-text-display');
+            document.getElementById('year_color').value = $(this).find('span').attr('data-value');
             var elemnt = $(this).closest('._select_color_drop').prev();
             elemnt.find('span.color').remove();
             $(this).find('span').clone().appendTo(elemnt);
@@ -59,19 +59,19 @@ $(document).ready(function () {
 
 //New Location
     $(document).on("mouseenter", '#new_hive_comp', function () {
-        $('#close_add_form').css("color", "#34322c");
+        $('#close_add_hive_form').css("color", "#34322c");
     });
 
-    $(document).on("mouseenter", '#close_add_form', function () {
-        $('#close_add_form').css("color", "#f2d002");
+    $(document).on("mouseenter", '#close_add_hive_form', function () {
+        $('#close_add_hive_form').css("color", "#f2d002");
     });
 
     $(document).on("mouseleave", '#new_hive_comp', function () {
-        $('#close_add_form').css("color", "transparent");
+        $('#close_add_hive_form').css("color", "transparent");
     });
 
-    $(document).on("mouseleave", '#close_add_form', function () {
-        $('#close_add_form').css("color", "#34322c");
+    $(document).on("mouseleave", '#close_add_hive_form', function () {
+        $('#close_add_hive_form').css("color", "#34322c");
     });
 
 //All Locations
@@ -118,7 +118,7 @@ $(document).ready(function () {
         }
     });
 
-    $('#close_add_form').on("click", function () {
+    $('#close_add_hive_form').on("click", function () {
         switch_active_class(document.getElementById('img_new_hive'), 'zoomed', 'unzoomed');
         switch_active_class(document.getElementById('new_hive_heading'), 'show', 'hide');
         switch_active_class(document.getElementById('new_hive_form'), 'show_form', 'hide');
