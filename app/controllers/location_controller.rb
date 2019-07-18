@@ -7,6 +7,7 @@ class LocationController < ApplicationController
   def show
     @location = Location.find(params[:id])
     @locations = Location.all
+    @hives = Hive.where(location_id: @location.id)
   end
 
   def edit

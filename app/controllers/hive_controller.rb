@@ -8,7 +8,7 @@ class HiveController < ApplicationController
     @hive = Hive.new(hive_params)
 
     if @hive.save
-      redirect_to @hive
+      redirect_to location_path(@hive.location_id)
     else
       flash.alert = "Wrong data!"
     end

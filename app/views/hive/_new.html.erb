@@ -1,6 +1,6 @@
-<div id="new_hive_comp">
+<div id="new_hive_comp" style="margin-bottom: 100px">
 
-<%= image_tag 'big_honeycomb3.png', id: 'img_new_hive'%>
+<%= image_tag 'big_honeycomb_centered.png', id: 'img_new_hive'%>
     <div id="new_hive_heading" class="show shown">
     <h3> New </h3>
     <h3> Hive </h3>
@@ -13,7 +13,7 @@
       <i class="fa fa-times-circle fa-lg" id="close_add_hive_form"></i>
     </div>
 
-    <%= form_with model: @hive, class: 'transparent', local: true do |f| %>
+    <%= form_with model: @hive, :url => '/hive',class: 'transparent', local: true do |f| %>
 
       <div class="form-add-hive">
         <h1 class="h3 mb-3 font-weight-normal" style="text-decoration: underline">New Hive</h1>

@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col"></div>
+
+  <div class="col">
+    <table id="hives_table">
+      <% @hives.each_with_index do |hive, index| %>
+        <% if index%8 == 0 %>
+          <tr>
+        <% end %>
+        <td class="hive_comp" style="padding: 0;">
+          <%= image_tag 'big_honeycomb_centered.png', style: 'zoom: 13%; margin: 20px; margin-top: 0 !important;'%>
+          <div style="margin-top: -96px;">
+            <h5 style="color: #f2d002"><%= hive.hive_number %></h5>
+            <%= image_tag 'hive/hive.png', id: 'img_hive', style: 'zoom: 20%; margin-top: -5px; margin-bottom: 100px'%>
+          </div>
+        </td>
+        <% if index%8 == 7 %>
+          </tr>
+        <% end %>
+      <% end %>
+    </table>
+  </div>
+
+  <div class="col"></div>
+</div>
