@@ -11,7 +11,22 @@
           <%= image_tag 'big_honeycomb_centered.png', style: 'zoom: 13%; margin: 20px; margin-top: 0 !important;'%>
           <div style="margin-top: -96px;">
             <h5 style="color: #f2d002"><%= hive.hive_number %></h5>
-            <%= image_tag 'hive/hive.png', id: 'img_hive', style: 'zoom: 20%; margin-top: -5px; margin-bottom: 100px'%>
+            <% if hive.year_color %>
+              <% case hive.year_color %>
+                <% when 0 %>
+                  <%= image_tag 'hive/hive_white.png', id: 'img_hive', style: 'zoom: 20%; margin-top: -5px; margin-bottom: 100px;'%>
+                <% when 1 %>
+                  <%= image_tag 'hive/hive_yellow.png', id: 'img_hive', style: 'zoom: 20%; margin-top: -5px; margin-bottom: 100px;'%>
+                <% when 2 %>
+                  <%= image_tag 'hive/hive_red.png', id: 'img_hive', style: 'zoom: 20%; margin-top: -5px; margin-bottom: 100px;'%>
+                <% when 3 %>
+                  <%= image_tag 'hive/hive_green.png', id: 'img_hive', style: 'zoom: 20%; margin-top: -5px; margin-bottom: 100px;'%>
+                <% when 4 %>
+                  <%= image_tag 'hive/hive_blue.png', id: 'img_hive', style: 'zoom: 20%; margin-top: -5px; margin-bottom: 100px;'%>
+              <% end %>
+            <% else %>
+              <%= image_tag 'hive/hive.png', id: 'img_hive', style: 'zoom: 20%; margin-top: -5px; margin-bottom: 100px;'%>
+            <% end %>
           </div>
         </td>
         <% if index%8 == 7 %>

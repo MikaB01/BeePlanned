@@ -8,6 +8,7 @@ class LocationController < ApplicationController
     @location = Location.find(params[:id])
     @locations = Location.all
     @hives = Hive.where(location_id: @location.id)
+    @hives = @hives.sort_by { |hive |hive.hive_number  }
   end
 
   def edit
