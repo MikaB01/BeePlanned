@@ -1,4 +1,4 @@
-$(document).ready(function () {
+(function() {
 
     $('.reset_all').click(function () {
         $(document).css("all", "initial");

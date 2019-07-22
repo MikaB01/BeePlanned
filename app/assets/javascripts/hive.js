@@ -1,4 +1,4 @@
-$(document).ready(function () {
+(function() {
 
     //Colorpicker
     _colors=$('._select_color_drop li');
