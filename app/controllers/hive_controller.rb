@@ -3,6 +3,11 @@ class HiveController < ApplicationController
     @locations = Location.all
   end
 
+  def show
+    @hive = Hive.find(params[:id])
+    @location = Location.find(@hive.location_id)
+  end
+
   def create
 
     @hive = Hive.new(hive_params)

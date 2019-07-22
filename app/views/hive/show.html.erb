@@ -1,22 +1,15 @@
-<%= javascript_include_tag "location", "data-turbolinks-track" => true  %>
 <%= javascript_include_tag "hive", "data-turbolinks-track" => true  %>
 
 <div class="wrapper">
   <header>
-    <%= render 'nav' %>
+
     <div style="height: 190px"></div>
 
     <%= link_to '<i class="fa fa-arrow-circle-left fa-2x"></i>'.html_safe, :back, style: "color: #34322c", id: "back_button" %>
 
     <div style="text-align: center">
 
-      <%= render 'show_location_comb' %>
-
-      <div style="margin-top: 100px; align: center">
-        <%= render 'hive/new' %>
-      </div>
-
-      <%= render 'hives_table' %>
+      <%= render 'show_hive_comb' %>
 
     </div>
 

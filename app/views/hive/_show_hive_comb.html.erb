@@ -1,0 +1,92 @@
+<div id="show_hive_comb" style="margin-bottom: 150px">
+
+  <%= image_tag 'big_honeycomb_centered.png', id: 'img_show_hive'%>
+
+  <div id="show_hive_table" class="transparent hidden hide">
+
+    <i class="fa fa-times-circle fa-lg" id="close_show_comb"></i>
+
+    <div id="hive_number_zoomed">
+      <h1 class="h3 mb-3 font-weight-normal" style="margin-top: 10px; text-decoration: underline;"><%= @hive.hive_number %></h1>
+      <h2 class="h3 mb-3 font-weight-normal" style="font-size: 24px; margin-top: -10px">Location: <%= @location.name %></h2>
+    </div>
+
+    <table class="separate" id="show_table_hive">
+
+      <% if @hive.colony_type != "" %>
+        <tr>
+          <td class="long_td">Colony Type:</td>
+          <td colspan="3"><%= @hive.colony_type %></td>
+        </tr>
+      <% end %>
+
+      <% if @hive.hive_type != "" %>
+        <tr>
+          <td class="long_td">Hive Type:</td>
+          <td colspan="3"><%= @hive.hive_type %></td>
+        </tr>
+      <% end %>
+
+      <% if @hive.colony_created_at != nil %>
+        <tr>
+          <td class="long_td">Colony created at:</td>
+          <td colspan="3"><%= @hive.colony_created_at %></td>
+        </tr>
+      <% end %>
+
+      <% if @hive.queen_added_at != nil %>
+        <tr>
+          <td class="long_td">Queen added at:</td>
+          <td colspan="3"><%= @hive.queen_added_at %></td>
+        </tr>
+      <% end %>
+
+      <% if @hive.breed != "" || @hive.year_color %>
+        <tr>
+          <td class="long_td">Breed:</td>
+          <td class="normal_td"><%= @hive.breed %></td>
+          <td class="normal_td">Year color:</td>
+          <td>
+            <% if @hive.year_color %>
+              <% case @hive.year_color %>
+              <% when 0 %>
+                <span class="color white"></span>
+              <% when 1 %>
+                <span class="color yellow"></span>
+              <% when 2 %>
+                <span class="color red"></span>
+              <% when 3 %>
+                <span class="color green"></span>
+              <% when 4 %>
+                <span class="color blue"></span>
+              <% end %>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+
+    </table>
+
+  </div>
+
+  <div id="hive_number_unzoomed">
+    <h1 class="h3 mb-3 font-weight-normal show"><%= @hive.hive_number %></h1>
+    <% if @hive.year_color %>
+      <% case @hive.year_color %>
+    <% when 0 %>
+        <%= image_tag 'hive/hive_white.png', id: 'img_hive', style: 'zoom: 30%; margin-top: -5px; margin-bottom: 100px;'%>
+      <% when 1 %>
+        <%= image_tag 'hive/hive_yellow.png', id: 'img_hive', style: 'zoom: 30%; margin-top: -5px; margin-bottom: 100px;'%>
+      <% when 2 %>
+        <%= image_tag 'hive/hive_red.png', id: 'img_hive', style: 'zoom: 30%; margin-top: -5px; margin-bottom: 100px;'%>
+      <% when 3 %>
+        <%= image_tag 'hive/hive_green.png', id: 'img_hive', style: 'zoom: 30%; margin-top: -5px; margin-bottom: 100px;'%>
+      <% when 4 %>
+        <%= image_tag 'hive/hive_blue.png', id: 'img_hive', style: 'zoom: 30%; margin-top: -5px; margin-bottom: 100px;'%>
+      <% end %>
+    <% else %>
+      <%= image_tag 'hive/hive.png', id: 'img_hive', style: 'zoom: 30%; margin-top: -5px; margin-bottom: 100px;'%>
+    <% end %>
+  </div>
+
+</div>

@@ -38,7 +38,7 @@
       <% end %>
 
       <% if @location.latitude || @location.longitude %>
-        <tr>
+        <tr id="coordinate_row">
           <td>Latitude:</td>
           <td><%= @location.latitude %></td>
           <td>Longitude:</td>
@@ -50,6 +50,9 @@
 
   </div>
 
-  <h1 class="h3 mb-3 font-weight-normal show" id="location_name_unzoomed"><%= @location.name %></h1>
+  <div id="location_name_unzoomed">
+    <h1 class="h3 mb-3 font-weight-normal show"><%= @location.name %></h1>
+    <i class="fa fa-map-marker fa-2x"></i>
+  </div>
 
 </div>

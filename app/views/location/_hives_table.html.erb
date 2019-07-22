@@ -4,10 +4,10 @@
   <div class="col">
     <table id="hives_table">
       <% @hives.each_with_index do |hive, index| %>
-        <% if index%8 == 0 %>
+        <% if index%10 == 0 %>
           <tr>
         <% end %>
-        <td class="hive_comp" style="padding: 0;">
+        <td onclick="location.href= '<%= hive_path(hive.id) %>'" class="hive_comp" style="padding: 0;">
           <%= image_tag 'big_honeycomb_centered.png', style: 'zoom: 13%; margin: 20px; margin-top: 0 !important;'%>
           <div style="margin-top: -96px;">
             <h5 style="color: #f2d002"><%= hive.hive_number %></h5>
@@ -29,7 +29,7 @@
             <% end %>
           </div>
         </td>
-        <% if index%8 == 7 %>
+        <% if index%10 == 9 %>
           </tr>
         <% end %>
       <% end %>
