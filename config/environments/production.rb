@@ -26,7 +26,7 @@ Rails.application.configure do
   config.assets.js_compressor = Uglifier.new(harmony: true)
   # config.assets.css_compressor = :sass
 
-  config.assets.compile = true
+  config.assets.compile = false
 
   config.public_file_server.enabled = true
 
