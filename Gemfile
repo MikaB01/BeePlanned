@@ -15,9 +15,6 @@ gem 'jquery-migrate-rails'
 #Font-Awesome
 gem "font-awesome-rails"
 
-#Colorselector
-gem 'bootstrap-colorselector-rails', '~> 0.1.0'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 
