@@ -18,6 +18,8 @@
 //= require bootstrap-sprockets
 //= require location.js
 //= require hive.js
+//= require turbolinks
+//= require_tree .
 
 $(document).ready(function() {
 

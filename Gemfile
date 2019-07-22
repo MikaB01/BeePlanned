@@ -12,6 +12,8 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 gem 'jquery-migrate-rails'
 
+gem 'turbolinks', '~> 5.2.0'
+
 #Font-Awesome
 gem "font-awesome-rails"
 
