@@ -10,6 +10,8 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require_tree .
+//= require turbolinks
 //= require rails-ujs
 //= require activestorage
 //= require jquery3
@@ -18,8 +20,6 @@
 //= require bootstrap-sprockets
 //= require location.js
 //= require hive.js
-//= require turbolinks
-//= require_tree .
 
 $(document).ready(function() {
 
