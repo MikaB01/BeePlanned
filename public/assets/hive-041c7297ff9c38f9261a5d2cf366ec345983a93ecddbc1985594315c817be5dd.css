@@ -1,0 +1,763 @@
+/* line 1, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+*:focus {
+  outline: 0px !important;
+  box-shadow: none !important;
+}
+
+/* line 6, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 12, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+body {
+  font-family: "Helvetica Neue",sans-serif;
+  font-weight: lighter;
+}
+
+/* line 17, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+div.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: url(/assets/background/BeePlanned_background-1e5cc512f82a3006e027669149bebf9b3a98c02ee485c177b00c818a12007438.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+/* line 24, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+.content {
+  width: 94%;
+  margin: 4em auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+/* line 32, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+.logo {
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 16px 46px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+/* line 43, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+  z-index: 100;
+}
+
+/* line 50, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+}
+
+/* line 63, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+nav.yellow ul {
+  background: #daa520;
+}
+
+/* line 67, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+a.black {
+  color: #201f1b;
+}
+
+/* line 71, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+nav ul li {
+  display: inline-block;
+  padding: 16px 40px;
+}
+
+/* line 76, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* line 84, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+nav ul li a#active {
+  text-decoration: underline;
+}
+
+/* line 88, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #daa520;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+@media (max-width: 786px) {
+  /* line 102, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+  }
+
+  /* line 108, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+  nav ul {
+    max-height: 0px;
+    background: #daa520;
+  }
+
+  /* line 113, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+  nav.yellow ul {
+    background: #daa520;
+  }
+
+  /* line 117, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+  .showing {
+    max-height: 34em;
+  }
+
+  /* line 121, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+  }
+
+  /* line 128, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+  .menu-icon {
+    display: block;
+  }
+}
+/* line 134, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+#index_logo {
+  max-width: 154px;
+  max-height: 154px;
+}
+
+/* line 139, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+#new_hive_form {
+  max-width: 400px;
+  margin-top: -250px;
+  margin-bottom: 220px;
+  color: #f2d002;
+}
+
+/* line 146, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+#show_hive_table {
+  position: relative;
+  max-width: 400px;
+  margin-top: -300px;
+  color: #f2d002;
+  z-index: 10;
+}
+
+/* line 154, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+#new_hive_form input[type=text], #new_hive_form input[type=number], #new_hive_form input[type=date], #new_hive_form span#date_span, #new_hive_form select {
+  background-color: transparent;
+  border-color: #f2d002;
+  color: #f2d002;
+}
+
+/* line 160, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+#img_new_hive {
+  z-index: -10;
+  zoom: 22%;
+}
+
+/* line 165, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+#img_show_all_hive {
+  z-index: -10;
+  zoom: 22%;
+}
+
+/* line 170, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+#img_show_hive {
+  z-index: -20;
+  zoom: 30%;
+}
+
+/* line 175, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+.zoomed {
+  -webkit-animation-name: zoom_it;
+          animation-name: zoom_it;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-transform: scale(3.5, 3.5);
+          transform: scale(3.5, 3.5);
+}
+
+@-webkit-keyframes zoom_it {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(3.5, 3.5);
+            transform: scale(3.5, 3.5);
+  }
+}
+
+@keyframes zoom_it {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(3.5, 3.5);
+            transform: scale(3.5, 3.5);
+  }
+}
+/* line 186, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+.unzoomed {
+  -webkit-animation-name: unzoom_it;
+          animation-name: unzoom_it;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+@-webkit-keyframes unzoom_it {
+  0% {
+    -webkit-transform: scale(3.5, 3.5);
+            transform: scale(3.5, 3.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes unzoom_it {
+  0% {
+    -webkit-transform: scale(3.5, 3.5);
+            transform: scale(3.5, 3.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+/* line 197, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+.show {
+  -webkit-animation-name: show_it;
+          animation-name: show_it;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+/* line 203, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+.show_form {
+  -webkit-animation-name: show_it;
+          animation-name: show_it;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+@-webkit-keyframes show_it {
+  0% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  50% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes show_it {
+  0% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  50% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+/* line 215, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+.hide {
+  -webkit-animation-name: hide_it;
+          animation-name: hide_it;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+}
+
+@-webkit-keyframes hide_it {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+}
+
+@keyframes hide_it {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+}
+/* line 225, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+.hidden {
+  display: none;
+}
+
+/* line 226, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+.shown {
+  width: initial;
+  height: initial;
+}
+
+/* line 228, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+div #new_hive_comp {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  max-height: 158px;
+}
+
+/* line 236, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+div #show_all_hive_comp {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  max-height: 158px;
+}
+
+/* line 244, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+div #show_hive_comb {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  max-height: 158px;
+  z-index: 0;
+}
+
+/* line 253, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+div #new_hive_heading {
+  text-align: center;
+  margin-top: -145px;
+  margin-left: 120px;
+  max-width: 160px;
+  color: #f2d002;
+}
+
+/* line 261, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+#new_hive_heading:hover {
+  text-decoration: underline;
+}
+
+/* line 265, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+div #show_all_hive_heading {
+  text-align: center;
+  margin-top: -150px;
+  margin-left: 115px;
+  max-width: 160px;
+  color: #f2d002;
+}
+
+/* line 273, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+#show_all_hive_heading:hover {
+  text-decoration: underline;
+}
+
+/* line 277, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+.transparent {
+  background-color: transparent;
+}
+
+/* line 281, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+#activate_additional_settings_input {
+  background-color: #f2d002;
+}
+
+/* line 285, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+#hive_number_unzoomed {
+  position: relative;
+  margin-top: -170px !important;
+  color: #f2d002;
+  font-size: 34px;
+  text-decoration: underline;
+  z-index: 10;
+}
+
+/* line 294, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+input[type=submit] {
+  background-color: transparent;
+  border: 1px #777 solid;
+  color: #777;
+}
+
+/* line 300, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+input[type=submit]:hover {
+  border-color: #f2d002;
+  color: #f2d002;
+}
+
+/* line 305, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+input[type=text].top, input[type=number].top, input[type=date].top, span.top {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* line 310, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+input[type=text].middle, input[type=number].middle, input[type=date].middle, span.middle {
+  border-radius: 0;
+}
+
+/* line 314, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+input[type=text].bottom, input[type=number].bottom, input[type=date].bottom, span.bottom {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+/* line 320, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+table.separate {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+/* line 328, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+table#show_all_table {
+  width: 420px;
+  max-width: 420px;
+  font-size: 18px;
+  margin-left: -10px;
+}
+
+/* line 335, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+table#show_table_hive {
+  margin-left: -50px;
+  margin-top: -20px;
+  font-size: 16px;
+  text-align: left;
+  width: 500px;
+  max-width: 500px;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+/* line 349, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+table#show_table_hive td {
+  max-width: 100px;
+  width: 100px;
+}
+
+/* line 350, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+table#show_table_hive td.smaller_td {
+  max-width: 60px;
+  width: 60px;
+}
+
+/* line 351, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+table#show_table_hive td.small_td {
+  max-width: 80px;
+  width: 80px;
+}
+
+/* line 352, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+table#show_table_hive td.normal_td {
+  max-width: 130px;
+  width: 130px;
+}
+
+/* line 353, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+table#show_table_hive td.long_td {
+  max-width: 214px;
+  width: 214px;
+}
+
+/* line 355, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+table.separate td {
+  padding: 5px 12px;
+  border-bottom: 1px solid #f2d002;
+  border-right: 1px solid #f2d002;
+  color: #777;
+}
+
+/* line 362, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+table.separate th {
+  padding: 15px;
+}
+
+/* line 363, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+table.separate th {
+  border-bottom: 1px solid #f2d002;
+}
+
+/* line 364, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+table.separate tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+/* line 365, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+table.separate tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+/* line 366, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+table.separate tr td:first-child {
+  border-left: 1px solid #f2d002;
+}
+
+/* line 367, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+table.separate tr:first-child td {
+  border-top: 1px solid #f2d002;
+}
+
+/* line 368, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+table.separate tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+
+/* line 369, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+table.separate tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+
+/* line 371, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+table#show_all_table tr:hover td {
+  color: #f2d002 !important;
+}
+
+/* line 377, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+.switch input {
+  display: none;
+}
+
+/* line 380, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+.switch {
+  display: inline-block;
+  width: 50px;
+  height: 16px;
+  margin: 8px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  position: relative;
+}
+
+/* line 389, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
+  box-shadow: 0 0 0 1px #777, 0 0 1px #777;
+  cursor: pointer;
+  border: 3px solid transparent;
+  overflow: hidden;
+  transition: .4s;
+}
+
+/* line 402, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+.slider:before {
+  position: absolute;
+  content: "";
+  width: 25%;
+  height: 100%;
+  background: #777;
+  border-radius: 30px;
+  -webkit-transform: translateX(-21px);
+          transform: translateX(-21px);
+  transition: .4s;
+}
+
+/* line 413, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+input:checked + .slider:before {
+  -webkit-transform: translateX(9px);
+          transform: translateX(9px);
+  background: #f2d002;
+}
+
+/* line 417, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+input:checked + .slider {
+  box-shadow: 0 0 0 1px #f2d002,0 0 1px #f2d002;
+}
+
+/* line 422, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+._select_color {
+  font-size: 20px;
+  padding: 10px 12px;
+  font-weight: 300;
+  line-height: 28px;
+  -webkit-appearance: none;
+  width: 200px;
+  height: auto;
+  box-shadow: none;
+  text-align: left;
+  background-image: none;
+  color: #796652;
+  outline: none;
+}
+
+/* line 437, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+._select_color_drop {
+  margin: 0;
+  padding: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  top: 99%;
+  border-top: 0;
+  width: 200px;
+  background-color: #201f1b !important;
+  border: none !important;
+}
+
+/* line 449, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+.dropdown-menu {
+  background-color: #201f1b !important;
+  border: none !important;
+  margin-left: 10px !important;
+  width: 180px !important;
+  height: 28px !important;
+}
+
+/* line 457, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+.dropdown-menu:focus {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* line 463, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+._select_color_drop > li {
+  display: inline-block;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+/*._select_color_drop > li > .color,.btn > span.color{
+  border: 1px black solid;
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  float: left;
+  margin-top: -4px !important;
+}*/
+/* line 478, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+span.color {
+  border: 1px black solid;
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  float: left;
+  margin-top: -4px !important;
+}
+
+/* line 487, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+span.color {
+  margin-left: 4px;
+  margin-top: -1px !important;
+}
+
+/* line 488, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+.btn .caret {
+  float: right;
+  border-top: 7px solid;
+  font-size: 28px;
+  vertical-align: middle;
+  position: absolute;
+  right: 20px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  top: 20px;
+}
+
+/* line 501, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+div .dropdown {
+  height: 38px;
+}
+
+/*
+._select_color_drop > li > .white ,.btn._select_color > span.white{background-color: white;}
+._select_color_drop > li > .red ,.btn._select_color > span.red{background-color: red;}
+._select_color_drop > li > .green ,.btn._select_color > span.green{background-color: green;}
+._select_color_drop > li > .yellow ,.btn._select_color > span.yellow{background-color: #f2d002;}
+._select_color_drop > li > .brown ,.btn._select_color > span.brown{background-color: brown;}
+._select_color_drop > li > .orange ,.btn._select_color > span.orange{background-color: orange;}
+._select_color_drop > li > .pink ,.btn._select_color > span.pink{background-color: pink;}
+._select_color_drop > li > .silver ,.btn._select_color > span.silver{background-color: silver;}
+._select_color_drop > li > .blue ,.btn._select_color > span.blue{background-color: blue;}
+._select_color_drop > li > .TEAL ,.btn._select_color > span.TEAL{background-color: #008080;}
+._select_color_drop > li > .NAVY ,.btn._select_color > span.NAVY{background-color: #000080;}
+._select_color_drop > li > .PURPLE ,.btn._select_color > span.PURPLE{background-color: #800080;}
+._select_color_drop > li > .OLIVE ,.btn._select_color > span.OLIVE{background-color: #808000;}
+._select_color_drop > li > .LIME ,.btn._select_color > span.LIME{background-color: #00FF00;}
+*/
+/* line 521, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+span.white {
+  background-color: white;
+}
+
+/* line 522, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+span.yellow {
+  background-color: #f2d002;
+}
+
+/* line 523, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+span.red {
+  background-color: red;
+}
+
+/* line 524, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+span.green {
+  background-color: green;
+}
+
+/* line 525, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/hive.scss */
+span.blue {
+  background-color: blue;
+}
