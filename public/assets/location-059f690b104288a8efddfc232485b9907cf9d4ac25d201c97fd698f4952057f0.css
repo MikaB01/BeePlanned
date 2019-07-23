@@ -1,0 +1,740 @@
+/* line 6, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 12, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+body {
+  font-family: "Helvetica Neue",sans-serif;
+  font-weight: lighter;
+}
+
+/* line 17, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+header {
+  width: 100%;
+  height: 158vh;
+  background: url(/assets/background/BeePlanned_background2-95c57ad43953783397681da916c573151bffb2c19afa30dd757e9b38055151a8.png) no-repeat 50% 50%;
+}
+
+/* line 23, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+.content {
+  width: 94%;
+  margin: 4em auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+/* line 31, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+.logo {
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 16px 46px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+/* line 42, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+  z-index: 100;
+}
+
+/* line 49, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+}
+
+/* line 62, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+nav.yellow ul {
+  background: #daa520;
+}
+
+/* line 66, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+a.black {
+  color: #201f1b;
+}
+
+/* line 70, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+nav ul li {
+  display: inline-block;
+  padding: 16px 40px;
+}
+
+/* line 75, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* line 83, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+nav ul li a#active {
+  text-decoration: underline;
+}
+
+/* line 87, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #daa520;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+@media (max-width: 786px) {
+  /* line 101, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+  }
+
+  /* line 107, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+  nav ul {
+    max-height: 0px;
+    background: #daa520;
+  }
+
+  /* line 112, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+  nav.yellow ul {
+    background: #daa520;
+  }
+
+  /* line 116, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+  .showing {
+    max-height: 34em;
+  }
+
+  /* line 120, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+  }
+
+  /* line 127, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+  .menu-icon {
+    display: block;
+  }
+}
+/* line 133, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+#index_logo {
+  max-width: 154px;
+  max-height: 154px;
+}
+
+/* line 138, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+#new_location_form {
+  max-width: 400px;
+  margin-top: -250px;
+  color: #f2d002;
+}
+
+/* line 144, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+#show_all_location_table {
+  max-width: 400px;
+  margin-top: -250px;
+  color: #f2d002;
+}
+
+/* line 151, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+#show_location_table {
+  position: relative;
+  max-width: 400px;
+  margin-top: -290px;
+  color: #f2d002;
+  z-index: 20;
+}
+
+/* line 159, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+#location_name_unzoomed {
+  position: relative;
+  margin-top: -170px !important;
+  color: #f2d002;
+  font-size: 34px;
+  text-decoration: underline;
+  z-index: 10;
+}
+
+/* line 168, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+#new_location_form input[type=text] {
+  background-color: transparent;
+  border-color: #f2d002;
+  color: #f2d002;
+}
+
+/* line 174, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+#img_new_location {
+  z-index: -10;
+  zoom: 22%;
+}
+
+/* line 179, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+#img_show_all_location {
+  z-index: -10;
+  zoom: 22%;
+}
+
+/* line 184, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+#img_show_location {
+  z-index: -10;
+  zoom: 30%;
+}
+
+/* line 189, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+.zoomed_show {
+  -webkit-animation-name: zoom_show_it;
+          animation-name: zoom_show_it;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-transform: scale(2.5, 2.5);
+          transform: scale(2.5, 2.5);
+}
+
+@-webkit-keyframes zoom_show_it {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(2.5, 2.5);
+            transform: scale(2.5, 2.5);
+  }
+}
+
+@keyframes zoom_show_it {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(2.5, 2.5);
+            transform: scale(2.5, 2.5);
+  }
+}
+/* line 200, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+.zoomed {
+  -webkit-animation-name: zoom_it;
+          animation-name: zoom_it;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-transform: scale(3.5, 3.5);
+          transform: scale(3.5, 3.5);
+}
+
+@-webkit-keyframes zoom_it {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(3.5, 3.5);
+            transform: scale(3.5, 3.5);
+  }
+}
+
+@keyframes zoom_it {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(3.5, 3.5);
+            transform: scale(3.5, 3.5);
+  }
+}
+/* line 211, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+.unzoomed_show {
+  -webkit-animation-name: unzoom_show_it;
+          animation-name: unzoom_show_it;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+@-webkit-keyframes unzoom_show_it {
+  0% {
+    -webkit-transform: scale(2.5, 2.5);
+            transform: scale(2.5, 2.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes unzoom_show_it {
+  0% {
+    -webkit-transform: scale(2.5, 2.5);
+            transform: scale(2.5, 2.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+/* line 222, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+.unzoomed {
+  -webkit-animation-name: unzoom_it;
+          animation-name: unzoom_it;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+@-webkit-keyframes unzoom_it {
+  0% {
+    -webkit-transform: scale(3.5, 3.5);
+            transform: scale(3.5, 3.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes unzoom_it {
+  0% {
+    -webkit-transform: scale(3.5, 3.5);
+            transform: scale(3.5, 3.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+/* line 233, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+.show {
+  -webkit-animation-name: show_it;
+          animation-name: show_it;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+/* line 239, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+.show_form {
+  -webkit-animation-name: show_it;
+          animation-name: show_it;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+@-webkit-keyframes show_it {
+  0% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  50% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes show_it {
+  0% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  50% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+/* line 251, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+.hide {
+  -webkit-animation-name: hide_it;
+          animation-name: hide_it;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+}
+
+@-webkit-keyframes hide_it {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+}
+
+@keyframes hide_it {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+}
+/* line 261, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+.hidden {
+  display: none;
+}
+
+/* line 262, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+.shown {
+  width: initial;
+  height: initial;
+}
+
+/* line 264, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+div #new_location_comp {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  max-height: 158px;
+  height: 158px;
+}
+
+/* line 273, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+div #show_all_location_comp {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  max-height: 158px;
+}
+
+/* line 281, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+div #show_location_comp {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  max-height: 158px;
+  z-index: 0;
+}
+
+/* line 290, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+div #new_location_heading {
+  text-align: center;
+  margin-top: -145px;
+  margin-left: 120px;
+  max-width: 160px;
+  color: #f2d002;
+}
+
+/* line 298, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+#new_location_heading:hover {
+  text-decoration: underline;
+}
+
+/* line 302, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+div #show_all_location_heading {
+  text-align: center;
+  margin-top: -140px;
+  margin-left: 120px;
+  max-width: 160px;
+  color: #f2d002;
+}
+
+/* line 310, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+#show_all_location_heading:hover {
+  text-decoration: underline;
+}
+
+/* line 314, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+.transparent {
+  background-color: transparent;
+}
+
+/* line 318, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+#activate_coordinate_input {
+  background-color: #f2d002;
+}
+
+/* line 322, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+input[type=submit] {
+  background-color: transparent;
+  border: 1px #777 solid;
+  color: #777;
+}
+
+/* line 328, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+input[type=submit]:hover {
+  border-color: #f2d002;
+  color: #f2d002;
+}
+
+/* line 333, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+input[type=text].top {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-bottom: -1px;
+}
+
+/* line 339, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+input[type=text].middle {
+  border-radius: 0;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+
+/* line 345, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+input[type=text].bottom {
+  margin-top: -1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+/* line 352, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table.separate {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+/* line 360, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table#show_all_table {
+  width: 420px;
+  max-width: 420px;
+  font-size: 18px;
+  margin-left: -24px;
+}
+
+/* line 367, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table#show_table {
+  margin-left: -48px;
+  margin-top: -24px;
+  margin-bottom: 300px !important;
+  font-size: 16px;
+  text-align: left;
+  width: 500px;
+  max-width: 500px;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+/* line 382, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table#show_table td {
+  max-width: 130px;
+  width: 130px;
+}
+
+/* line 383, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table#show_table td.smaller_td {
+  max-width: 60px;
+  width: 60px;
+}
+
+/* line 384, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table#show_table td.small_td {
+  max-width: 80px;
+  width: 80px;
+}
+
+/* line 386, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table.separate td {
+  padding: 5px 12px;
+  border-bottom: 1px solid #f2d002;
+  border-right: 1px solid #f2d002;
+  color: #777;
+}
+
+/* line 393, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table.separate th {
+  padding: 15px;
+}
+
+/* line 394, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table.separate th {
+  border-bottom: 1px solid #f2d002;
+}
+
+/* line 395, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table.separate tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+/* line 396, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table.separate tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+/* line 397, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table.separate tr td:first-child {
+  border-left: 1px solid #f2d002;
+}
+
+/* line 398, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table.separate tr:first-child td {
+  border-top: 1px solid #f2d002;
+}
+
+/* line 399, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table.separate tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+
+/* line 400, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table.separate tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+
+/* line 402, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table#show_all_table tr:hover td {
+  color: #f2d002 !important;
+}
+
+/* line 407, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+.switch input {
+  display: none;
+}
+
+/* line 410, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+.switch {
+  display: inline-block;
+  width: 50px;
+  height: 16px;
+  margin: 8px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  position: relative;
+}
+
+/* line 419, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
+  box-shadow: 0 0 0 1px #777, 0 0 1px #777;
+  cursor: pointer;
+  border: 3px solid transparent;
+  overflow: hidden;
+  transition: .4s;
+}
+
+/* line 432, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+.slider:before {
+  position: absolute;
+  content: "";
+  width: 25%;
+  height: 100%;
+  background: #777;
+  border-radius: 30px;
+  -webkit-transform: translateX(-21px);
+          transform: translateX(-21px);
+  transition: .4s;
+}
+
+/* line 443, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+input:checked + .slider:before {
+  -webkit-transform: translateX(9px);
+          transform: translateX(9px);
+  background: #f2d002;
+}
+
+/* line 447, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+input:checked + .slider {
+  box-shadow: 0 0 0 1px #f2d002,0 0 1px #f2d002;
+}
+
+/* line 452, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table#hives_table {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  border-radius: 10px;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+/* line 461, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table#hives_table td {
+  background-color: #201f1b;
+  padding: 5px 12px;
+  border-bottom: 3px solid #f2d002;
+  color: #777;
+}
+
+/* line 468, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table#hives_table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+/* line 469, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table#hives_table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+/* line 470, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table#hives_table tr td:first-child {
+  border-left: 3px solid #f2d002;
+}
+
+/* line 471, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table#hives_table tr td:last-child {
+  border-right: 3px solid #f2d002;
+}
+
+/* line 472, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table#hives_table tr:first-child td {
+  border-top: 3px solid #f2d002;
+}
+
+/* line 473, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table#hives_table tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+
+/* line 474, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table#hives_table tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+
+/* line 476, /Users/mika/RubymineProjects/beeplanned/app/assets/stylesheets/location.scss */
+table#hives_table td.hive_comp :hover {
+  color: #f2d002;
+  text-decoration: underline !important;
+}
