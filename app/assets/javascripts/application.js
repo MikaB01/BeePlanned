@@ -23,8 +23,6 @@
 
 $(document).ready(function() {
 
-    window.alert("app!");
-
     $(".menu-icon").on("click", function() {
         $("nav ul").toggleClass("showing");
     });

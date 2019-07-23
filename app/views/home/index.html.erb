@@ -2,17 +2,17 @@
 <%= javascript_include_tag 'location', 'data-turbolinks-track': 'reload'  %>
 
 <div class="wrapper">
-  <header>
-    <%= render 'nav' %>
-    <div style="text-align: center; height: 100%;" id="beeplanned">
-      <h1>Bee</h1>
-      <h2>Planned</h2>
-    </div>
 
-    <div style="text-align: center; margin-top: -1080px;">
-      <%= render 'location/new' %>
-      <%= render 'location/show_all' %>
-    </div>
+  <%= render 'nav' %>
 
-  </header>
+  <div style="text-align: center; height: 100%;" id="beeplanned">
+    <h1>Bee</h1>
+    <h2>Planned</h2>
+  </div>
+
+  <div style="text-align: center; margin-top: -1080px;">
+    <%= render 'location/new' %>
+    <%= render 'location/show_all' %>
+  </div>
+
 </div>
