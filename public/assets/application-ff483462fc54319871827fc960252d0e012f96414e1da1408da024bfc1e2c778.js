@@ -786,7 +786,10 @@
 
 });
 
-(function() {
+(function($) {
+
+    window.alert("Hallo ich bin home.js :D");
+
     $(".menu-icon").on("click", function() {
         $("nav ul").toggleClass("showing");
     });
@@ -804,7 +807,7 @@
         }
     });
 });
-(function() {
+(function($) {
 
     window.alert("Hallo ich bin location.js :D");
 
