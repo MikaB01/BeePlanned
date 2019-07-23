@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a12281b-0f2c-453f-9906-9f18305f9996" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/beeplanned.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/beeplanned.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-484">
-              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+            <state relative-caret-position="254">
+              <caret line="39" column="61" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -50,19 +54,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/initializers/assets.rb">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="72" lean-forward="true" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
+            <state relative-caret-position="405">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/assets/.sprockets-manifest-af3a4b4745c46607e083a095964fb5c8.json">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/assets.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21499" selection-start-column="21493" selection-end-column="21499" />
+            <state relative-caret-position="195">
+              <caret line="13" column="72" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -80,14 +84,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hives_table</find>
-      <find>show_all_table</find>
-      <find>@location</find>
-      <find>img</find>
-      <find>img_show_hive</find>
-      <find>hive_</find>
-      <find>location_nam</find>
-      <find>/i</find>
       <find>show</find>
       <find>img_show_location</find>
       <find>location_name_unzoomed</find>
@@ -110,6 +106,14 @@
       <find>hive-e3</find>
       <find>home-</find>
       <find>home-e</find>
+      <find>hi</find>
+      <find>hive-77</find>
+      <find>therubyracer</find>
+      <find>uglifier</find>
+      <find>coffee-rails</find>
+      <find>sass-rails</find>
+      <find>RAILS_SERVE_STATIC_FILES</find>
+      <find>x_sendfile_header</find>
     </findStrings>
     <replaceStrings>
       <replace>rgba(0, 0, 0, 0.2)</replace>
@@ -193,9 +197,9 @@
         <option value="$PROJECT_DIR$/app/views/location/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/initializers/assets.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
@@ -552,12 +556,12 @@
       <workItem from="1563534040211" duration="528000" />
       <workItem from="1563728066207" duration="672000" />
       <workItem from="1563781762901" duration="13976000" />
-      <workItem from="1563864325351" duration="1180000" />
+      <workItem from="1563864325351" duration="2709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227418000" />
+    <option name="totallyTimeSpent" value="228947000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -636,20 +640,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/location_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20190715102035_create_hives.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -851,21 +841,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/hive/hive-38acf4da2f0c75e305bbf4d8b5764b8e04ceb16d7c4890fcce5414a6add98452.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/hive/hive_blue-953d57c1c7323845f279c1220eeaad6225d3c016881de8ab3c6b30b7b07ed1d8.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/hive-77d8a39b33a5ac9048cdf0e65473a67a8fad6ab8256af0e91f200e1d8f3e9499.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/hive-365c1112cd12225230b97c750f65923a77c45968eb82ee48a8d788ee0be67eb3.js" />
     <entry file="file://$PROJECT_DIR$/public/assets/location-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js">
@@ -889,13 +869,43 @@
     <entry file="file://$PROJECT_DIR$/public/assets/location-8041e21c01616fd62971d959e02031908917f578b1316a50f2c1af2313a7d9eb.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/home-4dc3b084d720a66cb5f75e7713112d667079735c80cac72a84bea360de4c64ad.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/home-4eb75eaedb1c99a1fecc9729206daa1d50c53d5ebf2fcdf55830b2e7c6396fd3.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/.sprockets-manifest-af3a4b4745c46607e083a095964fb5c8.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21500" selection-start-column="21499" selection-end-column="21500" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/hive-a3ccbda159c6c7dcdc2158c5ceb986c51e26a2e4ae34e2f7e263497fa8bb1b3e.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/public/assets/home-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/.sprockets-manifest-3dd98f6542a64a1115f64dc9812bd8e7.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-484">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        <state>
+          <caret column="15665" selection-start-column="15665" selection-end-column="15665" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/assets.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="72" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -906,29 +916,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/assets.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="72" lean-forward="true" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/home-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/home-4eb75eaedb1c99a1fecc9729206daa1d50c53d5ebf2fcdf55830b2e7c6396fd3.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/home-4dc3b084d720a66cb5f75e7713112d667079735c80cac72a84bea360de4c64ad.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/hive-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/.sprockets-manifest-af3a4b4745c46607e083a095964fb5c8.json">
+    <entry file="file://$PROJECT_DIR$/public/assets/home-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/hive-77d8a39b33a5ac9048cdf0e65473a67a8fad6ab8256af0e91f200e1d8f3e9499.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21499" selection-start-column="21493" selection-end-column="21499" />
+        <state relative-caret-position="-1949" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="39" column="61" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
         </state>
       </provider>
     </entry>

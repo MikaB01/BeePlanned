@@ -20,21 +20,24 @@ Rails.application.configure do
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
+  config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   # Compress JavaScripts and CSS.
-  config.assets.js_compressor = uglifier
+  config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
   config.assets.compile = false
 
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
+  config.assets.digest = true
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # for Apache
+  config.action_dispatch.x_sendfile_header = nil # for Heroku
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
 
   # Store uploaded files on the local file system (see config/storage.yml for options)
@@ -81,13 +84,7 @@ Rails.application.configure do
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
-  config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
-
-  if ENV["RAILS_LOG_TO_STDOUT"].present?
-    logger           = ActiveSupport::Logger.new(STDOUT)
-    logger.formatter = config.log_formatter
-    config.logger = ActiveSupport::TaggedLogging.new(logger)
-  end
+  #
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
