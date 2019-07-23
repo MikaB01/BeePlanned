@@ -1,5 +1,7 @@
 (function() {
 
+    window.alert("Hallo ich bin location.js :D");
+
     $('.reset_all').click(function () {
         $(document).css("all", "initial");
         document.getElementById('img_new_location').classList.remove('zoomed');
