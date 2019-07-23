@@ -1,4 +1,7 @@
-(function() {
+$(document).ready(function() {
+
+    window.alert("Hallo ich bin home.js :D");
+
     $(".menu-icon").on("click", function() {
         $("nav ul").toggleClass("showing");
     });
