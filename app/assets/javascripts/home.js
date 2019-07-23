@@ -1,4 +1,4 @@
-$(document).ready(function() {
+(function($) {
 
     window.alert("Hallo ich bin home.js :D");
 
