@@ -10,7 +10,6 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require_tree .
 //= require turbolinks
 //= require rails-ujs
 //= require activestorage
@@ -19,9 +18,13 @@
 //= require popper
 //= require bootstrap-sprockets
 //= require location.js
+//= require home.js
 //= require hive.js
+//= require_tree .
 
 $(document).ready(function() {
+
+    window.alert("app!");
 
     $(".menu-icon").on("click", function() {
         $("nav ul").toggleClass("showing");
