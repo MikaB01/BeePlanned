@@ -20,7 +20,6 @@
 //= require location.js
 //= require home.js
 //= require hive.js
-//= require_tree .
 
 $(document).ready(function() {
 
