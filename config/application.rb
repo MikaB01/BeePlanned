@@ -18,6 +18,7 @@ module Beeplanned
 
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
 
+    config.assets.enabled = true
     config.serve_static_assets = true
   end
 end
