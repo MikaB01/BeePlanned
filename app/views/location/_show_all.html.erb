@@ -16,13 +16,21 @@
 
     <table class="separate" id="show_all_table" style="margin-top: -30px;">
 
+      <% @address_table_shown = false %>
 
-      <tr class="top" id="show_all_location_table_th">
-        <th>Name</th>
-        <th>Country</th>
-        <th>State</th>
-      </tr>
+      <% @locations.each do |location| %>
+        <% if location.country && location.state %>
+          <% @address_table_shown = true %>
+        <% end %>
+      <% end %>
 
+      <% if @address_table_shown %>
+        <tr class="top" id="show_all_location_table_th">
+          <th>Name</th>
+          <th>Country</th>
+          <th>State</th>
+        </tr>
+      <% end %>
 
       <% @locations.each do |location| %>
 

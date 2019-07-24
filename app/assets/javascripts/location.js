@@ -68,7 +68,7 @@ $(document).ready(function() {
         $('#close_show').css("color", "#f2d002");
     });
 
-    $(document).on("click", '#location_name_unzoomed', function () {
+    $('#location_name_unzoomed').unbind("click").click(function () {
         switch_active_class(document.getElementById('location_name_unzoomed'), 'show', 'hide');
         document.getElementById('location_name_unzoomed').classList.add('hidden');
         switch_active_class(document.getElementById('img_show_location'), 'zoomed_show', 'unzoomed_show');
@@ -84,7 +84,7 @@ $(document).ready(function() {
         $('#close_show').css("color", "#34322c");
     });
 
-    $(document).on("click", '#close_show', function () {
+    $('#close_show').unbind("click").click(function () {
         switch_active_class(document.getElementById('img_show_location'), 'zoomed_show', 'unzoomed_show');
         switch_active_class(document.getElementById('show_location_table'), 'show_form', 'hide');
         document.getElementById('show_location_table').classList.add('hidden');
