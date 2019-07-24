@@ -2,12 +2,111 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a12281b-0f2c-453f-9906-9f18305f9996" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/location.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/location.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/hive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/hive.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/location.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/location.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/hive/_new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/hive/_new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/location/_show_all.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/location/_show_all.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/.sprockets-manifest-128a6a0d1bbad4cc4d2f23b1ec1179ea.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/action_cable-69fddfcddf4fdef9828648f9330d6ce108b93b82b0b8d3affffc59a114853451.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/action_cable-69fddfcddf4fdef9828648f9330d6ce108b93b82b0b8d3affffc59a114853451.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/activestorage-1ed4604ac2170045f1ffca4edb81a75246661555e4f9cf682bb8a21825e32e1c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/activestorage-1ed4604ac2170045f1ffca4edb81a75246661555e4f9cf682bb8a21825e32e1c.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/application-1e243332b9485b4a492abe40e356bc4cd952360b6fb9d8534fec592cfe2e7bdd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/application-1e243332b9485b4a492abe40e356bc4cd952360b6fb9d8534fec592cfe2e7bdd.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/application-6ed9c70e6522430cde24fe60d76b3d60fab7cf16663f0b135c0bad9d7aa020bd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/application-6ed9c70e6522430cde24fe60d76b3d60fab7cf16663f0b135c0bad9d7aa020bd.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/application-a5e0936fdba7d5a589fdc95dacf4919947c7a35471f0701b8259461bc6a7d4bd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/application-a5e0936fdba7d5a589fdc95dacf4919947c7a35471f0701b8259461bc6a7d4bd.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/application-c4ce5bbc0aaec8d732961d6d4b7a6c9cac68b3f7e8dde5235bea624ea5eb8990.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/application-c4ce5bbc0aaec8d732961d6d4b7a6c9cac68b3f7e8dde5235bea624ea5eb8990.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/application-c548d153e9b073caa9f573049f33d856459718e5a0acec84a7571cc569391d63.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/application-c548d153e9b073caa9f573049f33d856459718e5a0acec84a7571cc569391d63.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/application-d500980d75e445a8ccd1b8e4733f123d5f005f182f6bc6068b0edcdeb35cb747.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/application-d500980d75e445a8ccd1b8e4733f123d5f005f182f6bc6068b0edcdeb35cb747.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/big_honeycomb-abb4ef155ab38e06ffba8c81bb5fb0c3713a60a86f9d5086b5e3d6480b11bd4c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/big_honeycomb2-e66c0501d26ca4707b45ca917f4a12c814f8b4ec33461fbf239c242b6a274511.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/big_honeycomb3-c40ac82f9122dfa120859038fefaee28010b48c72f4d381233f170bc513e8389.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/big_honeycomb_centered-d199ac31d739a09a4122695c6fcbc05c3977c0c804c16f22c2d0657a8ec89b47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap-sprockets-be3fe292958a9e51988aa988a66ad839038ee3d687ad47d958cd2248195a5b77.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap-sprockets-be3fe292958a9e51988aa988a66ad839038ee3d687ad47d958cd2248195a5b77.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap.min-5a58904c6fb97d2cef1ed184dabffe15b0f2af0120c517b44d9476e97f3a12fb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap.min-5a58904c6fb97d2cef1ed184dabffe15b0f2af0120c517b44d9476e97f3a12fb.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/cable-418359aee98ceddc6038da7d5bbca92887834ebbdf146eafa50b788ea14a8cdb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/cable-418359aee98ceddc6038da7d5bbca92887834ebbdf146eafa50b788ea14a8cdb.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/coffee-script-1fc277cf20f802ad03dadce9de63d733cb9c789574d0d88a954987667d851cc4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/coffee-script-1fc277cf20f802ad03dadce9de63d733cb9c789574d0d88a954987667d851cc4.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8.ttf.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-ba0c59deb5450f5cb41b3f93609ee2d0d995415877ddfa223e8a8a7533474f07.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/hive-041c7297ff9c38f9261a5d2cf366ec345983a93ecddbc1985594315c817be5dd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/hive-041c7297ff9c38f9261a5d2cf366ec345983a93ecddbc1985594315c817be5dd.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/hive-1654fde95a84985fc0a2453c89bc303c20e612ed0bf40c2c4635a41136e65e10.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/hive-1654fde95a84985fc0a2453c89bc303c20e612ed0bf40c2c4635a41136e65e10.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/hive-1c8bb7f4c36a1bd82f74c79d6818efce26754187fa71c21aeb44f5e5d6f16f92.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/hive-1c8bb7f4c36a1bd82f74c79d6818efce26754187fa71c21aeb44f5e5d6f16f92.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/hive-77d8a39b33a5ac9048cdf0e65473a67a8fad6ab8256af0e91f200e1d8f3e9499.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/hive-77d8a39b33a5ac9048cdf0e65473a67a8fad6ab8256af0e91f200e1d8f3e9499.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/hive-b43f495265e298be4cc5b078066800bccc673d7c612a8d3cbee8eefa04b1ae43.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/hive-b43f495265e298be4cc5b078066800bccc673d7c612a8d3cbee8eefa04b1ae43.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/hive-fa5e14d2e85e3936c7b0405e1aaa14cec741133938ce48cd7a461e484507c496.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/hive-fa5e14d2e85e3936c7b0405e1aaa14cec741133938ce48cd7a461e484507c496.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/home-134e53513a2ff1d08c96118b05d0c6985250719a1a76da2ddbd467c4ddb55306.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/home-134e53513a2ff1d08c96118b05d0c6985250719a1a76da2ddbd467c4ddb55306.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/home-14e6ef75d58cb727cd0aa55941d521e7a724564fb5feb047e0069d0fa048de6f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/home-14e6ef75d58cb727cd0aa55941d521e7a724564fb5feb047e0069d0fa048de6f.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/home-2432b2d8c3b394698689020ccd2447f8d4c422617dd1ffb5e54d04269085f89c.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/home-2432b2d8c3b394698689020ccd2447f8d4c422617dd1ffb5e54d04269085f89c.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/home-3b88306a28cfa5b158bd0f2c1ddf90f2cc1af665185c761bd5f01102fdc8a730.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/home-3b88306a28cfa5b158bd0f2c1ddf90f2cc1af665185c761bd5f01102fdc8a730.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/home-9f94ed23bd3f5c5a21376aa724b7b19f83fe6f46b885901503296262336ee085.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/home-9f94ed23bd3f5c5a21376aa724b7b19f83fe6f46b885901503296262336ee085.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/home-af4d8f09df62471e4242e465c9d30d43949e7a717126770a775349132982603c.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/home-af4d8f09df62471e4242e465c9d30d43949e7a717126770a775349132982603c.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-migrate-8047383dd49f497b001046e38b54e2d8e6f64c8ee6ff9f2c89b2f3f66f6de1dd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-migrate-8047383dd49f497b001046e38b54e2d8e6f64c8ee6ff9f2c89b2f3f66f6de1dd.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-migrate-min-4b9a092934f8df934403368a55b57a2c6c331f24d2b1f40b452bd2e95356aa3e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-migrate-min-4b9a092934f8df934403368a55b57a2c6c331f24d2b1f40b452bd2e95356aa3e.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery.min-693ce4426a47c40b80ac9cd618fbd633c4182bff664d1f25009813f456c3ed12.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery.min-693ce4426a47c40b80ac9cd618fbd633c4182bff664d1f25009813f456c3ed12.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery2-25ca496239ae8641a09627c8aace5863e7676e465fbb4ce81bc7eb78c4d15627.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery2-25ca496239ae8641a09627c8aace5863e7676e465fbb4ce81bc7eb78c4d15627.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery2.min-bc8282586e3c9b075064b64bd37f30138f89bca3a516da709f7cd788b2a11ecd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery2.min-bc8282586e3c9b075064b64bd37f30138f89bca3a516da709f7cd788b2a11ecd.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery3-e200ee796ef24add7054280d843a80de75392557bb4248241e870fac0914c0c1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery3-e200ee796ef24add7054280d843a80de75392557bb4248241e870fac0914c0c1.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery3.min-922c42b88314b04fba4f23bb741e45c885adb1c737c4e15e4286f15d7eb03e1e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery3.min-922c42b88314b04fba4f23bb741e45c885adb1c737c4e15e4286f15d7eb03e1e.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery_ujs-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery_ujs-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/location-059f690b104288a8efddfc232485b9907cf9d4ac25d201c97fd698f4952057f0.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/location-059f690b104288a8efddfc232485b9907cf9d4ac25d201c97fd698f4952057f0.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/location-299a534966c3f521530062fb04f2fc18c4a3394b3001c4cfc22a8237f48a5c1e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/location-299a534966c3f521530062fb04f2fc18c4a3394b3001c4cfc22a8237f48a5c1e.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/location-3126045a752d0e77432e154fa33552755fbda4df1917a6bcf4198a84080df106.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/location-3126045a752d0e77432e154fa33552755fbda4df1917a6bcf4198a84080df106.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/location-bfad4c5f76b3f33e97c4da4f612c394497fb2bc73e67d00c2bb063fbe2239818.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/location-bfad4c5f76b3f33e97c4da4f612c394497fb2bc73e67d00c2bb063fbe2239818.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/location-c0fdc3030abce47f9927cc1cf4e1c41402e9ad221608fbdf4a296af235d0ad64.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/location-c0fdc3030abce47f9927cc1cf4e1c41402e9ad221608fbdf4a296af235d0ad64.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/location-df142d71acecc54c3dd2fa6bb6a60b52b34b23d59554e0888224f4be0b66fac0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/location-df142d71acecc54c3dd2fa6bb6a60b52b34b23d59554e0888224f4be0b66fac0.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/manifest-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/manifest-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/popper-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/popper-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/rails-ujs-2b8935521e2301b06b45bd42e623eb0c0acf76c3a6ba383b7429c6a2884f8c23.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/rails-ujs-2b8935521e2301b06b45bd42e623eb0c0acf76c3a6ba383b7429c6a2884f8c23.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/turbolinks-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/turbolinks-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js.gz" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,15 +136,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/location.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="362" column="18" selection-start-line="362" selection-start-column="18" selection-end-line="362" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/location/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -54,11 +144,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/location/_show_location_comb.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="68" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="68" />
+            <state relative-caret-position="540">
+              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -66,8 +156,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/location.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="70" column="68" selection-start-line="70" selection-start-column="68" selection-end-line="70" selection-end-column="68" />
+            <state relative-caret-position="294">
+              <caret line="78" column="66" selection-start-line="78" selection-start-column="66" selection-end-line="78" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/application.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -76,7 +193,7 @@
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/hive.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="311">
-              <caret line="164" column="30" lean-forward="true" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="66" />
+              <caret line="164" column="30" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -85,7 +202,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/location/_show_all.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="32" column="15" lean-forward="true" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+              <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -109,20 +226,6 @@
                 <element signature="n#style#0;n#div#0;n#div#5;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#5;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="804">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
@@ -168,8 +271,8 @@
       <find>new_hive_heading</find>
       <find>show_all_table</find>
       <find>hive_number_unzoomed</find>
-      <find>location_name_unzoomed</find>
       <find>show_all_location_table</find>
+      <find>location_name_unzoomed</find>
     </findStrings>
     <replaceStrings>
       <replace>rgba(0, 0, 0, 0.2)</replace>
@@ -238,10 +341,7 @@
         <option value="$PROJECT_DIR$/app/views/hive/_show_hive_comb.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/initializers/assets.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/home.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/hive/index.html.erb" />
@@ -257,6 +357,9 @@
         <option value="$PROJECT_DIR$/app/views/hive/_new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/location/_show_all.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/hive.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
       </list>
     </option>
   </component>
@@ -568,12 +671,12 @@
       <workItem from="1563728066207" duration="672000" />
       <workItem from="1563781762901" duration="13976000" />
       <workItem from="1563864325351" duration="7672000" />
-      <workItem from="1563953474285" duration="3458000" />
+      <workItem from="1563953474285" duration="4831000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238768000" />
+    <option name="totallyTimeSpent" value="240141000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -692,13 +795,6 @@
     <entry file="file://$PROJECT_DIR$/public/assets/.sprockets-manifest-3dd98f6542a64a1115f64dc9812bd8e7.json" />
     <entry file="file://$PROJECT_DIR$/public/assets/hive-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js" />
     <entry file="file://$PROJECT_DIR$/public/assets/home-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js" />
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="39" column="61" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/hive-fa5e14d2e85e3936c7b0405e1aaa14cec741133938ce48cd7a461e484507c496.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -718,13 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -790,13 +879,6 @@
         <state relative-caret-position="-49" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="847">
@@ -813,7 +895,7 @@
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="804">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
@@ -838,20 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/location.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="68" selection-start-line="70" selection-start-column="68" selection-end-line="70" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/hive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="164" column="30" lean-forward="true" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/hive/_new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
@@ -867,7 +935,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/location/_show_all.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="32" column="15" lean-forward="true" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+          <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -880,8 +948,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/location/_show_location_comb.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="68" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="68" />
+        <state relative-caret-position="540">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/location.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="78" column="66" selection-start-line="78" selection-start-column="66" selection-end-line="78" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/hive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="164" column="30" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
         </state>
       </provider>
     </entry>
