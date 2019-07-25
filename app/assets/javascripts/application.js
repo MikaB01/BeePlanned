@@ -23,8 +23,6 @@
 
 $(document).ready(function() {
 
-    window.alert("without local precompile!");
-
     $(".menu-icon").on("click", function() {
         $("nav ul").toggleClass("showing");
     });
