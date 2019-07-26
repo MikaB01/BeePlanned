@@ -1,11 +1,44 @@
-<h1>Ja Moin, super 1P</h1>
-<div style="align: center">
-  <%= image_tag 'Superv3-top.png', id: 'img_super', style: 'width: 18%; margin-top: -60px'%>
-  <h4 style="margin-top: -56px; color: #f2d002">Add Super +</h4>
+<%= javascript_include_tag "super", "data-turbolinks-track" => true  %>
 
-  <br><br><br><br>
 
-  <%= image_tag 'Superv3-top.png', id: 'img_super', style: 'width: 60%; margin-top: -64px;z-index: 32; position: relative'%>
-  <%= image_tag 'Superv3-top.png', id: 'img_super', style: 'width: 60%; margin-top: -64px;z-index: 31; position: relative'%>
-  <%= image_tag 'Superv3-top.png', id: 'img_super', style: 'width: 60%; margin-top: -64px;z-index: 30; position: relative'%>
+<div id="new_super">
+
+  <%= image_tag 'Superv3-top.png', id: 'img_new_super'%>
+
+  <div id="new_super_heading" class="show shown">
+    <h3> Add Super
+      </i><i class="fa fa-plus-circle fa-1x"></i>
+    </h3>
+  </div>
+
+  <div id="new_super_form" class="hide hidden transparent">
+
+    <%= form_with model: @super, :url => "/super", class: 'transparent', local: true do |f| %>
+
+      <div class="form_add_super">
+        <h1 class="h3 mb-3 font-weight-normal" style="text-decoration: underline">Add Super</h1>
+
+        <div class="form-row">
+          <div class="col" style="color: #34322c">
+            <i class="fa fa-times-circle fa-lg" id="close_add_form"></i>
+          </div>
+          <div class="col">
+            <%= f.number_field :number, class: 'form-control', placeholder: 'Nr.', type: 'number' %>
+          </div>
+          <div class="col">
+            <%= f.text_field :super_type, class: 'form-control', placeholder: 'Type', type: 'text' %>
+          </div>
+          <div class="col">
+            <div class="actions">
+              <%= f.submit "Add Super", class: 'btn', type: 'submit', id: 'add-super-submit'%>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    <% end %>
+  </div>
+
 </div>
+

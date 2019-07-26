@@ -108,7 +108,7 @@ $(document).ready(function() {
         document.getElementById('hive_number_unzoomed').classList.remove('hide');
         document.getElementById('hive_number_unzoomed').classList.add('show');
         document.getElementById('hive_number_unzoomed').classList.remove('hidden');
-        //document.getElementById('new_hive_comp').classList.remove("hidden");
+        document.getElementById('new_super').classList.remove("hidden");
     });
 
     $('#close_add_hive_form').unbind("click").click(function () {
@@ -167,7 +167,7 @@ $(document).ready(function() {
         document.getElementById('hive_number_unzoomed').classList.add('hidden');
         switch_active_class(document.getElementById('img_show_hive'), 'zoomed_show', 'unzoomed_show');
         switch_active_class(document.getElementById('show_hive_table'), 'show_form', 'hide');
-        //document.getElementById('new_hive_comp').classList.add("hidden");
+        document.getElementById('new_super').classList.add("hidden");
     });
 
 });

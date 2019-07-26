@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   resources :hive do
   end
 
+  resources :super do
+  end
+
   #get 'location/new'
   devise_for :users, controllers: { sessions: 'users/sessions',
                                               registrations: 'users/registrations',

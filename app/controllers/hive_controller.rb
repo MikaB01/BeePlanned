@@ -6,6 +6,7 @@ class HiveController < ApplicationController
   def show
     @hive = Hive.find(params[:id])
     @location = Location.find(@hive.location_id)
+    @supers = Super.where(hive_id: @hive.id)
   end
 
   def create

@@ -1,3 +1,66 @@
 // Place all the styles related to the Super controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div #new_super {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  max-height: 158px;
+  height:  158px;
+}
+
+div #new_super_heading {
+  text-align: center;
+  margin-top: -70px;
+  color: #f2d002;
+}
+
+#new_super_heading:hover {
+  text-decoration: underline;
+}
+
+#new_super_form {
+  max-width: 800px;
+  margin-top: -50px;
+  color: #f2d002;
+}
+
+input[type=submit] {
+  background-color: transparent;
+  border: 1px #777 solid;
+  color: #777;
+}
+
+#img_new_super{
+  z-index: -10;
+  zoom: 22%;
+}
+
+input[type=submit]:hover {
+  border-color: #f2d002;
+  color: #f2d002;
+}
+
+.zoomed {
+  animation-name: zoom_it;
+  animation-duration: 0.8s;
+  transform: scale(2,2);
+}
+
+@keyframes zoom_it {
+  0%   {transform: scale(1,1);}
+  100% {transform: scale(2,2);}
+}
+
+.unzoomed {
+  animation-name: unzoom_it;
+  animation-duration: 0.4s;
+  transform: scale(1,1);
+}
+
+@keyframes unzoom_it {
+  0%   {transform: scale(2,2);}
+  100% {transform: scale(1,1);}
+}
