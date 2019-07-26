@@ -14,6 +14,6 @@ class SuperController < ApplicationController
 
   private
   def super_params
-    params.permit(:number, :super_type)
+    params.permit(:number, :super_type, :hive_id)
   end
 end

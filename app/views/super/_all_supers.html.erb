@@ -1,0 +1,16 @@
+<% @supers.each_with_index do |sup, index| %>
+  <div class="row" style="margin-top: -64px; position: relative; z-index: <%= 20-index %>">
+
+    <div class="col" style="margin-top: 120px; text-align: right; color: #f2d002">
+      <h2>Nr. <%= sup.number %></h2>
+      <h3><%= sup.super_type %></h3>
+    </div>
+
+    <div class="col">
+      <%= image_tag 'Superv3-top.png', class: 'img_super', style: 'zoom: 60%'%>
+    </div>
+
+    <div class="col"></div>
+
+  </div>
+<% end %>

@@ -28,6 +28,9 @@
           <div class="col">
             <%= f.text_field :super_type, class: 'form-control', placeholder: 'Type', type: 'text' %>
           </div>
+
+          <%= f.hidden_field :hive_id, value: @hive.id%>
+
           <div class="col">
             <div class="actions">
               <%= f.submit "Add Super", class: 'btn', type: 'submit', id: 'add-super-submit'%>

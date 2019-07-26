@@ -7,6 +7,7 @@ class HiveController < ApplicationController
     @hive = Hive.find(params[:id])
     @location = Location.find(@hive.location_id)
     @supers = Super.where(hive_id: @hive.id)
+    @supers = @supers.sort_by { |sup |sup.number  }
   end
 
   def create
