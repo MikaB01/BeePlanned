@@ -43,24 +43,24 @@ input[type=submit]:hover {
   color: #f2d002;
 }
 
-.zoomed {
-  animation-name: zoom_it;
+.zoomed_super_add {
+  animation-name: zoom_super_add_it;
   animation-duration: 0.8s;
   transform: scale(2,2);
 }
 
-@keyframes zoom_it {
+@keyframes zoom_super_add_it {
   0%   {transform: scale(1,1);}
   100% {transform: scale(2,2);}
 }
 
-.unzoomed {
-  animation-name: unzoom_it;
+.unzoomed_super_add {
+  animation-name: unzoom_super_add_it;
   animation-duration: 0.4s;
   transform: scale(1,1);
 }
 
-@keyframes unzoom_it {
+@keyframes unzoom_super_add_it {
   0%   {transform: scale(2,2);}
   100% {transform: scale(1,1);}
 }

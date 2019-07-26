@@ -1,14 +1,14 @@
 $(document).ready(function() {
 
     $("#new_super_heading").unbind("click").click(function () {
-        switch_active_class(document.getElementById('img_new_super'), 'zoomed', 'unzoomed');
+        switch_active_class(document.getElementById('img_new_super'), 'zoomed_super_add', 'unzoomed_super_add');
         switch_active_class(document.getElementById('new_super_heading'), 'show', 'hide');
         switch_active_class(document.getElementById('new_super_form'), 'show_form', 'hide');
         $('#new_super').css("z-index", "10");
     });
 
     $('#close_add_form').unbind("click").click(function () {
-        switch_active_class(document.getElementById('img_new_super'), 'zoomed', 'unzoomed');
+        switch_active_class(document.getElementById('img_new_super'), 'zoomed_super_add', 'unzoomed_super_add');
         switch_active_class(document.getElementById('new_super_heading'), 'show', 'hide');
         switch_active_class(document.getElementById('new_super_form'), 'show_form', 'hide');
     });
