@@ -8,6 +8,9 @@ class HiveController < ApplicationController
     @location = Location.find(@hive.location_id)
     @supers = Super.where(hive_id: @hive.id)
     @supers = @supers.sort_by { |sup |sup.number  }
+    @frames = Frame.all
+    #@frames = Frame.where(super_id: @super.id)
+    #@frames = @frames.sort_by { |frm |frm.letter  }
   end
 
   def create

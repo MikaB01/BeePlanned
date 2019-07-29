@@ -1,0 +1,24 @@
+// Place all the styles related to the frame controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#img_new_frame {
+  zoom: 60%;
+  opacity: 0;
+  margin-left: 35px;
+}
+
+#img_new_frame:hover {
+  opacity: 0.8;
+}
+
+#new_frame_heading {
+  color: #777;
+  margin-top: -130px;
+  margin-left: 50px;
+}
+#new_frame_heading:hover {
+  color: rgb(46, 47, 47);
+  margin-top: -130px;
+  margin-left: 50px;
+}

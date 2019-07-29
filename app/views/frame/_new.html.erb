@@ -1,0 +1,45 @@
+<%= javascript_include_tag "frame", "data-turbolinks-track" => true  %>
+
+
+<div id="new_frame" >
+
+  <%= image_tag 'framev1.png', id: 'img_new_frame'%>
+
+  <div id="new_frame_heading" class="show shown">
+    <i class="fa fa-plus-circle fa-2x"></i>
+  </div>
+
+  <div id="new_frame_form" class="hide hidden transparent">
+
+    <%= form_with model: @frame, :url => "/frame", class: 'transparent', local: true do |f| %>
+
+      <div class="form_add_frame">
+        <h1 class="h3 mb-3 font-weight-normal" style="text-decoration: underline">Add Frame</h1>
+
+        <div class="form-row">
+          <div class="col" style="color: #34322c">
+            <i class="fa fa-times-circle fa-lg" id="close_add_form"></i>
+          </div>
+          <div class="col">
+            <%= f.text_field :letter, class: 'form-control', placeholder: 'Letter', type: 'text' %>
+          </div>
+          <div class="col">
+            <%= f.text_field :frame_type, class: 'form-control', placeholder: 'Type', type: 'text' %>
+          </div>
+
+          <!--%= f.hidden_field :frame_id, value: @frame.id %-->
+
+          <div class="col">
+            <div class="actions">
+              <%= f.submit "Add Frame", class: 'btn', type: 'submit', id: 'add-frame-submit'%>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    <% end %>
+  </div>
+
+</div>
+

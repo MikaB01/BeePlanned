@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'frame/create'
   resources :location do
   end
 
@@ -7,6 +8,9 @@ Rails.application.routes.draw do
   end
 
   resources :super do
+  end
+
+  resources :frame do
   end
 
   #get 'location/new'
