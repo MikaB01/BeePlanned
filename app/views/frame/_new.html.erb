@@ -1,26 +1,29 @@
 <%= javascript_include_tag "frame", "data-turbolinks-track" => true  %>
 
+<div class="new_frame" >
 
-<div id="new_frame" >
+  <% @new_frame_form = "new_frame_form_" + @img_id.to_s%>
+  <% @close_add_frame = "close_add_frame_" + @img_id.to_s%>
+  <% @new_frame_heading = "new_frame_heading_" + @img_id.to_s%>
+  <% @img_id = "img_new_frame_" + @img_id.to_s%>
+  <%= image_tag 'framev1.png', id: @img_id, class: 'img_new_frame' %>
 
-  <%= image_tag 'framev1.png', id: 'img_new_frame'%>
-
-  <div id="new_frame_heading" class="show shown">
+  <div id="<%= @new_frame_heading %>" class="show shown new_frame_heading">
     <i class="fa fa-plus-circle fa-2x"></i>
   </div>
 
-  <div id="new_frame_form" class="hide hidden transparent">
+  <div id="<%= @new_frame_form %>" class="hide hidden transparent new_frame_form">
 
     <%= form_with model: @frame, :url => "/frame", class: 'transparent', local: true do |f| %>
 
       <div class="form_add_frame">
-        <h1 class="h3 mb-3 font-weight-normal" style="text-decoration: underline">Add Frame</h1>
+        <h1 class="h3 mb-3 font-weight-normal" style="text-decoration: underline; color: #f2d002">Add Frame</h1>
 
         <div class="form-row">
-          <div class="col" style="color: #34322c">
-            <i class="fa fa-times-circle fa-lg" id="close_add_form"></i>
+          <div class="col-2" style="color: #34322c">
+            <i class="fa fa-times-circle fa-lg close_add_frame" id="<%= @close_add_frame %>" style="color: #f2d002"></i>
           </div>
-          <div class="col">
+          <div class="col" style="max-width: 100px">
             <%= f.text_field :letter, class: 'form-control', placeholder: 'Letter', type: 'text' %>
           </div>
           <div class="col">

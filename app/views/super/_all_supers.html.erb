@@ -1,3 +1,5 @@
+<% @max_index = 0 %>
+
 <% @supers.each_with_index do |sup, index| %>
   <div class="row" style="margin-top: -64px; position: relative; z-index: <%= 20-index %>">
 
@@ -17,6 +19,7 @@
           <%= image_tag 'framev1.png', class: 'img_frame', style: 'zoom: 60%; margin-left: 35px'%>
           <h6 style="color: #f2d002; margin-left: -62px; margin-top: 44px; width: 10px">C</h6>
 
+          <% @img_id = index %>
           <%= render 'frame/new' %>
 
         </div>
@@ -26,4 +29,10 @@
     <div class="col"></div>
 
   </div>
+
+  <% if index > @max_index %>
+    <% @max_index = index %>
+  <% end %>
 <% end %>
+
+<div data-super-length = "<%= @max_index %>" id="max_super_index" ></div>
