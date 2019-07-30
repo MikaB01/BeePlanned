@@ -5,6 +5,7 @@
   <% @new_frame_form = "new_frame_form_" + @img_id.to_s%>
   <% @close_add_frame = "close_add_frame_" + @img_id.to_s%>
   <% @new_frame_heading = "new_frame_heading_" + @img_id.to_s%>
+  <% @hidden_super_id = "hidden_super_id_" + @img_id.to_s%>
   <% @img_id = "img_new_frame_" + @img_id.to_s%>
   <%= image_tag 'framev1.png', id: @img_id, class: 'img_new_frame' %>
 
@@ -30,7 +31,7 @@
             <%= f.text_field :frame_type, class: 'form-control', placeholder: 'Type', type: 'text' %>
           </div>
 
-          <!--%= f.hidden_field :frame_id, value: @frame.id %-->
+          <%= f.hidden_field :super_id, id: @hidden_super_id %>
 
           <div class="col">
             <div class="actions">

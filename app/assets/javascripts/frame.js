@@ -5,6 +5,8 @@ $(document).ready(function() {
     //Add Frame
     for (let i = 0; i < max_index+1; i++) {
 
+        document.getElementById('hidden_super_id_' + i).value = $("#super_id_" + i).attr('data-super-id');
+
         $(document).on("mouseenter", '#new_frame_heading_' + i, function () {
             $('#img_new_frame_' + i).css("opacity", "0.5");
         });

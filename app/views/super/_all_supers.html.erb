@@ -11,13 +11,13 @@
     <div class="col">
       <%= image_tag 'Superv3-top.png', class: 'img_super', style: 'zoom: 60%'%>
       <div style="margin-top: -210px; margin-bottom: 20px">
-        <div class="row" style="margin-left: 20px">
-          <%= image_tag 'framev1.png', class: 'img_frame', style: 'zoom: 60%; margin-left: 35px'%>
-          <h6 style="color: #f2d002; margin-left: -62px; margin-top: 44px; width: 10px">A</h6>
-          <%= image_tag 'framev1.png', class: 'img_frame', style: 'zoom: 60%; margin-left: 35px'%>
-          <h6 style="color: #f2d002; margin-left: -62px; margin-top: 44px; width: 10px">B</h6>
-          <%= image_tag 'framev1.png', class: 'img_frame', style: 'zoom: 60%; margin-left: 35px'%>
-          <h6 style="color: #f2d002; margin-left: -62px; margin-top: 44px; width: 10px">C</h6>
+        <div class="row" style="margin-left: 20px; height: 190px">
+          <% @frames.each_with_index do |frm, index| %>
+            <% if frm.super_id == sup.id %>
+              <%= image_tag 'framev1.png', class: 'img_frame', style: 'zoom: 60%; margin-left: 35px'%>
+              <h6 style="color: #f2d002; margin-left: -62px; margin-top: 44px; width: 10px"><%= frm.letter %></h6>
+            <% end %>
+          <% end %>
 
           <% @img_id = index %>
           <%= render 'frame/new' %>
@@ -33,6 +33,9 @@
   <% if index > @max_index %>
     <% @max_index = index %>
   <% end %>
+
+  <div data-super-id = "<%= sup.id %>" id="super_id_<%= index %>" ></div>
+
 <% end %>
 
 <div data-super-length = "<%= @max_index %>" id="max_super_index" ></div>
