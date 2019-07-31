@@ -10,6 +10,14 @@ class FrameController < ApplicationController
     end
   end
 
+  def destroy
+    @frame = Frame.find(params[:id])
+    @super = Super.find(@frame.super_id)
+
+    @frame.destroy
+    redirect_to hive_path(@super.hive_id)
+  end
+
   private
   def frame_params
     params.permit(:letter, :frame_type, :super_id)
