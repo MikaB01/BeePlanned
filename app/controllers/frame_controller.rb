@@ -18,7 +18,7 @@ class FrameController < ApplicationController
     @frame = Frame.find(params[:id])
     @super = Super.find(@frame.super_id)
 
-    if @frame.update(params.permit(:letter, :frame_type))
+    if @frame.update(params.require(:frame).permit(:letter, :frame_type, :super_id))
       flash[:success] = "Status changed"
       redirect_to hive_path(@super.hive_id)
     else

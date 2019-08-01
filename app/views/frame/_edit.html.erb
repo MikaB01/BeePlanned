@@ -2,16 +2,14 @@
 
 <div class="edit_frame" >
 
-  <% @frame = Frame.find(@edit_frame_id) %>
-  <% @edit_frame_id = nil %>
-  <% @edit_frame_form = "edit_frame_form_" + @frame_id.to_s%>
-  <% @close_edit_frame = "close_edit_frame_" + @frame_id.to_s%>
-  <% @edit_frame_heading = "edit_frame_heading_" + @frame_id.to_s%>
-  <% @hidden_super_id = "hidden_super_id_" + @frame_id.to_s%>
+  <% @edit_frame_form = "edit_frame_form_" + @super_index.to_s + "_" + @frame_index.to_s %>
+  <% @close_edit_frame = "close_edit_frame_" + @super_index.to_s + "_" + @frame_index.to_s %>
+  <% @edit_frame_heading = "edit_frame_heading_" + @super_index.to_s%>
+  <% @hidden_super_id = "hidden_super_id_" + @super_index.to_s%>
 
   <div id="<%= @edit_frame_form %>" class="hide hidden transparent edit_frame_form">
 
-    <%= form_with model: @frame, :url => "/frame", class: 'transparent', local: true do |f| %>
+    <%= form_with model: @frame, url: '/frame/'+@frame.id.to_s, class: 'transparent', local: true do |f| %>
 
       <div class="form_edit_frame">
         <h1 class="h3 mb-3 font-weight-normal" style="text-decoration: underline; color: #f2d002">Edit Frame</h1>
@@ -21,18 +19,18 @@
             <i class="fa fa-times-circle fa-lg close_edit_frame" id="<%= @close_edit_frame %>" style="color: #f2d002"></i>
           </div>
           <div class="col" style="max-width: 100px">
-          <script>window.alert("frame<%= @frame.id %>")</script>
-            <%= f.text_field :letter, class: 'form-control', placeholder: 'Letter', type: 'text', value: @frame.letter %>
+            <% puts "###################################" + @frame.letter %>
+            <%= f.text_field :letter, class: 'form-control', placeholder: 'Letter', type: 'text', id: 'letter' + @frame.id.to_s, value: @frame.letter.to_s %>
           </div>
           <div class="col">
             <%= f.text_field :frame_type, class: 'form-control', placeholder: 'Type', type: 'text', value: @frame.frame_type %>
-          </div>x
+          </div>
 
-          <%= f.hidden_field :super_id, id: @hidden_super_id %>
+          <%= f.hidden_field :super_id, id: @super_id %>
 
           <div class="col">
             <div class="actions">
-              <%= link_to "Edit Frame", frame_path(@frame, letter: "x", frame_type: "123"), method: :put %>
+              <!--%= link_to "Edit Frame", frame_path(@frame, letter: "f", frame_type: "dsg"), method: :put %-->
               <%= f.submit "Edit Frame", class: 'btn', type: 'submit', id: 'edit-frame-submit'%>
             </div>
           </div>
@@ -41,6 +39,7 @@
       </div>
 
     <% end %>
+
   </div>
 
 </div>

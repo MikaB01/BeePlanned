@@ -2,11 +2,11 @@
 
 <div class="new_frame" >
 
-  <% @new_frame_form = "new_frame_form_" + @frame_id.to_s%>
-  <% @close_add_frame = "close_add_frame_" + @frame_id.to_s%>
-  <% @new_frame_heading = "new_frame_heading_" + @frame_id.to_s%>
-  <% @hidden_super_id = "hidden_super_id_" + @frame_id.to_s%>
-  <% @img_id = "img_new_frame_" + @frame_id.to_s%>
+  <% @new_frame_form = "new_frame_form_" + @super_index.to_s%>
+  <% @close_add_frame = "close_add_frame_" + @super_index.to_s%>
+  <% @new_frame_heading = "new_frame_heading_" + @super_index.to_s%>
+  <% @hidden_super_id = "hidden_super_id_" + @super_index.to_s%>
+  <% @img_id = "img_new_frame_" + @super_index.to_s%>
   <%= image_tag 'framev1.png', id: @img_id, class: 'img_new_frame' %>
 
   <div id="<%= @new_frame_heading %>" class="show shown new_frame_heading">

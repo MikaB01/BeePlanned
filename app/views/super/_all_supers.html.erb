@@ -1,7 +1,10 @@
 <% @max_index = 0 %>
-<% @edit_frame_id = nil %>
 
 <% @supers.each_with_index do |sup, index| %>
+
+  <% @frame_amount = Frame.where(super_id: sup.id).count %>
+  <div data-frame_amount = "<%= @frame_amount %>" id="frame_amount<%= index %>" ></div>
+
   <div class="row" style="margin-top: -64px; position: relative; z-index: <%= 20-index %>">
 
     <div class="col" style="margin-top: 120px; text-align: right; color: #f2d002">
@@ -13,12 +16,13 @@
       <%= image_tag 'Superv3-top.png', class: 'img_super', style: 'zoom: 60%'%>
       <div style="margin-top: -210px; margin-bottom: 20px">
         <div class="row" style="margin-left: 20px; height: 190px">
+          <% @frame_index = 0 %>
           <% @frames.each_with_index do |frm, f| %>
             <% if frm.super_id == sup.id %>
               <%= image_tag 'framev1.png', class: 'img_frame', style: 'zoom: 60%; margin-left: 35px'%>
               <h6 style="color: #f2d002; margin-left: -62px; margin-top: 44px; width: 10px"><%= frm.letter %></h6>
               <div style="color: #777; margin-left: -10px; margin-top: 130px; height: 24px; width: 20px">
-                <i class="fa fa-pencil little_frame_icons edit_frame_icon_<%= index %>" style="margin-left: -5px;" onclick="<% @edit_frame_id = frm.id %>"></i>
+                <i class="fa fa-pencil little_frame_icons" id="edit_frame_icon_<%= index %>_<%= @frame_index %>" style="margin-left: -5px;"></i>
               </div>
               <%= link_to '<i class="fa fa-trash little_frame_icons" style="margin-left: -6px"></i>'.html_safe,
                           frame_path(frm),
@@ -26,14 +30,21 @@
                           style: 'margin-left: -22px; margin-top: 150px; height: 24px; width: 20px',
                           method: :delete,
                           data: { confirm: 'Are you sure?' } %>
+              <% @frame_index+=1 %>
             <% end %>
           <% end %>
 
-          <% @frame_id = index %>
+          <% @super_index = index %>
           <%= render 'frame/new' %>
 
-          <% if !@edit_frame_id.nil? %>
-            <%= render 'frame/edit'%>
+          <% @frame_index = 0 %>
+          <% @frames.each_with_index do |frm, f| %>
+            <% if frm.super_id == sup.id %>
+              <% @frame = frm %>
+              <% @super_id = sup.id %>
+              <%= render 'frame/edit' %>
+              <% @frame_index += 1 %>
+            <% end %>
           <% end %>
 
         </div>
