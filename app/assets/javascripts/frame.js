@@ -29,6 +29,16 @@ $(document).ready(function() {
             document.getElementById('new_frame_heading_' + i).classList.remove('hidden');
         });
 
+        $('.edit_frame_icon_' + i).unbind("click").click(function () {
+            window.alert(i);
+            $('.edit_frame_form').css("width", "320px");
+            switch_active_class(document.getElementById('edit_frame_form_' + i), 'show_form', 'hide');
+        });
+
+        $('#close_edit_frame_' + i).unbind("click").click(function () {
+            switch_active_class(document.getElementById('edit_frame_form_' + i), 'show_form', 'hide');
+            $('.edit_frame_form').css("width", "90px");
+        });
     }
 
     //Add Frame

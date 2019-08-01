@@ -1,4 +1,5 @@
 <% @max_index = 0 %>
+<% @edit_frame_id = nil %>
 
 <% @supers.each_with_index do |sup, index| %>
   <div class="row" style="margin-top: -64px; position: relative; z-index: <%= 20-index %>">
@@ -12,21 +13,28 @@
       <%= image_tag 'Superv3-top.png', class: 'img_super', style: 'zoom: 60%'%>
       <div style="margin-top: -210px; margin-bottom: 20px">
         <div class="row" style="margin-left: 20px; height: 190px">
-          <% @frames.each_with_index do |frm, index| %>
+          <% @frames.each_with_index do |frm, f| %>
             <% if frm.super_id == sup.id %>
               <%= image_tag 'framev1.png', class: 'img_frame', style: 'zoom: 60%; margin-left: 35px'%>
               <h6 style="color: #f2d002; margin-left: -62px; margin-top: 44px; width: 10px"><%= frm.letter %></h6>
-              <%= link_to '<i class="fa fa-trash del_frame" style="margin-left: -5px"></i>'.html_safe,
+              <div style="color: #777; margin-left: -10px; margin-top: 130px; height: 24px; width: 20px">
+                <i class="fa fa-pencil little_frame_icons edit_frame_icon_<%= index %>" style="margin-left: -5px;" onclick="<% @edit_frame_id = frm.id %>"></i>
+              </div>
+              <%= link_to '<i class="fa fa-trash little_frame_icons" style="margin-left: -6px"></i>'.html_safe,
                           frame_path(frm),
                           class: 'btn btn-sm',
-                          style: 'color: #777; margin-left: -15px; margin-top: 115px; height: 24px; width: 20px',
+                          style: 'margin-left: -22px; margin-top: 150px; height: 24px; width: 20px',
                           method: :delete,
                           data: { confirm: 'Are you sure?' } %>
             <% end %>
           <% end %>
 
-          <% @img_id = index %>
+          <% @frame_id = index %>
           <%= render 'frame/new' %>
+
+          <% if !@edit_frame_id.nil? %>
+            <%= render 'frame/edit'%>
+          <% end %>
 
         </div>
       </div>

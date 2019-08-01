@@ -10,6 +10,22 @@ class FrameController < ApplicationController
     end
   end
 
+  def edit
+    @frame = Frame.find(params[:id])
+  end
+
+  def update
+    @frame = Frame.find(params[:id])
+    @super = Super.find(@frame.super_id)
+
+    if @frame.update(params.permit(:letter, :frame_type))
+      flash[:success] = "Status changed"
+      redirect_to hive_path(@super.hive_id)
+    else
+      flash[:danger] = "There was a problem changing the status"
+    end
+  end
+
   def destroy
     @frame = Frame.find(params[:id])
     @super = Super.find(@frame.super_id)
