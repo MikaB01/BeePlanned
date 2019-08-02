@@ -1,6 +1,6 @@
 <%= javascript_include_tag "frame", "data-turbolinks-track" => true  %>
 
-<div class="new_frame" >
+<div class="new_frame">
 
   <% @new_frame_form = "new_frame_form_" + @super_index.to_s%>
   <% @close_add_frame = "close_add_frame_" + @super_index.to_s%>
@@ -13,7 +13,7 @@
     <i class="fa fa-plus-circle fa-2x"></i>
   </div>
 
-  <div id="<%= @new_frame_form %>" class="hide hidden transparent new_frame_form">
+  <div id="<%= @new_frame_form %>" class="hide hidden new_frame_form">
 
     <%= form_with model: @frame, url: '/frame', class: 'transparent', local: true do |f| %>
 
@@ -24,8 +24,8 @@
         </h1>
 
         <div class="form-row" style="margin-top: -8px">
-          <div class="col-2">
-            <i class="fa fa-times-circle fa-lg close_add_frame" id="<%= @close_add_frame %>" style="color: #777; margin-top: 10px"></i>
+          <div class="col-1">
+            <i class="fa fa-times-circle fa-lg close_add_frame" id="<%= @close_add_frame %>" style="color: #777; margin-top: 10px; margin-left: 6px"></i>
           </div>
           <div class="col" style="max-width: 80px">
             <%= f.text_field :letter, class: 'form-control', placeholder: 'Letter', type: 'text', style: 'background-color: transparent; border-color: #f2d002; color: #f2d002'%>
@@ -36,7 +36,7 @@
 
           <%= f.hidden_field :super_id, id: @hidden_super_id %>
 
-          <div class="col-2">
+          <div class="col" style="max-width: 80px; margin-left: -8px">
             <div class="actions">
               <%= f.submit "Add", class: 'btn', type: 'submit', id: 'add-frame-submit', style: ' border: 1px #f2d002 solid'%>
             </div>
