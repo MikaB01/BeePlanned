@@ -20,7 +20,7 @@ $(document).ready(function() {
             $('#close_add_frame_' + i).css("color", "#777");
             document.getElementById('img_new_frame_' + i).classList.add('hidden');
             document.getElementById('new_frame_heading_' + i).classList.add('hidden');
-            $('.new_frame_form').css("width", "380px");
+            $('.new_frame_form').css("width", "310px");
             switch_active_class(document.getElementById('new_frame_form_' + i), 'show_form', 'hide');
         });
 
@@ -59,7 +59,7 @@ $(document).ready(function() {
                     $('#close_edit_frame_' + i + '_' + f).css("color", "#777");
                     document.getElementById('img_new_frame_' + i).classList.add('hidden');
                     document.getElementById('new_frame_heading_' + i).classList.add('hidden');
-                    $('#edit_frame_form_' + i + '_' + f).css("width", "380px");
+                    $('#edit_frame_form_' + i + '_' + f).css("width", "310px");
                     document.getElementById('frame_amount' + i).classList.remove('close');
                     document.getElementById('frame_amount' + i).classList.add('open');
                     switch_active_class(document.getElementById('edit_frame_form_' + i + '_' + f), 'show_form', 'hide');

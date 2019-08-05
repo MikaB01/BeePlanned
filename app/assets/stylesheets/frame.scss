@@ -30,7 +30,7 @@
   background-color: #201f1b;
   border: 2px #f2d002 solid;
   border-radius: 15px;
-  width: 380px;
+  width: 310px;
   height: 100px;
 }
 
@@ -44,7 +44,7 @@
   background-color: #201f1b;
   border: 2px #f2d002 solid;
   border-radius: 15px;
-  width: 380px;
+  width: 310px;
   height: 100px;
 }
 
@@ -56,4 +56,12 @@
 .little_frame_icons:hover {
   color: #f2d002;
   cursor: pointer;
+}
+
+select {
+  background-color: transparent;
+  border-color: #f2d002;
+  color: #f2d002;
+  width: 130px;
+  height: 38px;
 }

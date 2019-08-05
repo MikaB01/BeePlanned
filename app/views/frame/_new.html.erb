@@ -28,10 +28,10 @@
             <i class="fa fa-times-circle fa-lg close_add_frame" id="<%= @close_add_frame %>" style="color: #777; margin-top: 10px; margin-left: 6px"></i>
           </div>
           <div class="col" style="max-width: 80px">
-            <%= f.text_field :letter, class: 'form-control', placeholder: 'Letter', type: 'text', style: 'background-color: transparent; border-color: #f2d002; color: #f2d002'%>
+            <%= f.text_field :letter, class: 'form-control', placeholder: 'Letter', type: 'text', autofocus: true, style: 'background-color: transparent; border-color: #f2d002; color: #f2d002'%>
           </div>
           <div class="col">
-            <%= f.text_field :frame_type, class: 'form-control', placeholder: 'Type', type: 'text', style: 'background-color: transparent; border-color: #f2d002; color: #f2d002'%>
+            <%= f.select :frame_type, options_for_select({"Middle Wall" => "0", "Honey" => "1", "Pollen" => "2", "Feed" => "3", "Brood" => "4", "Drone" => "5", "Empty" => "6"}, "6"), class: 'form-control', id: 'select_frame_type' %>
           </div>
 
           <%= f.hidden_field :super_id, id: @hidden_super_id %>

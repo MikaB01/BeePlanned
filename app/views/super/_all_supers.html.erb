@@ -1,5 +1,11 @@
 <% @max_index = 0 %>
 
+<p style="margin-top: -80px">
+  <h4 style="color: #f2d002">Frame type:</h4>
+  <%= image_tag 'frame_types/frameTypeLegende.png', style: 'zoom: 70%;'%>
+  <br><br><br>
+</p>
+
 <% @supers.each_with_index do |sup, index| %>
 
   <% @frame_amount = Frame.where(super_id: sup.id).count %>
@@ -19,7 +25,22 @@
           <% @frame_index = 0 %>
           <% @frames.each_with_index do |frm, f| %>
             <% if frm.super_id == sup.id %>
-              <%= image_tag 'framev1.png', class: 'img_frame', style: 'zoom: 60%; margin-left: 35px'%>
+              <% case frm.frame_type.to_i %>
+                <% when 0 %>
+                  <%= image_tag 'frame_types/frame-middleWall.png', class: 'img_frame', style: 'zoom: 60%; margin-left: 35px'%>
+                <% when 1 %>
+                  <%= image_tag 'frame_types/frame-honeycomb.png', class: 'img_frame', style: 'zoom: 60%; margin-left: 35px'%>
+                <% when 2 %>
+                  <%= image_tag 'frame_types/frame-pollencomb.png', class: 'img_frame', style: 'zoom: 60%; margin-left: 35px'%>
+                <% when 3 %>
+                  <%= image_tag 'frame_types/frame-feedcomb.png', class: 'img_frame', style: 'zoom: 60%; margin-left: 35px'%>
+                <% when 4 %>
+                  <%= image_tag 'frame_types/frame-broodcomb.png', class: 'img_frame', style: 'zoom: 60%; margin-left: 35px'%>
+                <% when 5 %>
+                  <%= image_tag 'frame_types/frame-dronecomb.png', class: 'img_frame', style: 'zoom: 60%; margin-left: 35px'%>
+                <% when 6 %>
+                  <%= image_tag 'framev1.png', class: 'img_frame', style: 'zoom: 60%; margin-left: 35px'%>
+              <% end %>
               <h6 style="color: #f2d002; margin-left: -62px; margin-top: 44px; width: 10px"><%= frm.letter %></h6>
               <div style="color: #777; margin-left: -10px; margin-top: 120px; height: 24px; width: 20px">
                 <i class="fa fa-pencil little_frame_icons" id="edit_frame_icon_<%= index %>_<%= @frame_index %>" style="margin-left: -5px;"></i>
