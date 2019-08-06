@@ -3,4 +3,5 @@ class Hive < ApplicationRecord
 
   validates :hive_number, presence: :true
   has_many :supers
+  has_many :perusals
 end

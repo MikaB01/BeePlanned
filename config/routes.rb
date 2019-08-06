@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'perusal/new'
+  get 'perusal/show'
   get 'frame/create'
   resources :location do
   end
@@ -11,6 +13,9 @@ Rails.application.routes.draw do
   end
 
   resources :frame do
+  end
+
+  resources :perusal do
   end
 
   #get 'location/new'

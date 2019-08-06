@@ -6,11 +6,15 @@
 
   <div style="height: 190px"></div>
 
-  <%= link_to '<i class="fa fa-arrow-circle-left fa-2x"></i>'.html_safe, :back, style: "color: #34322c", id: "back_button" %>
 
   <div style="text-align: center">
 
     <%= render 'show_hive_comb' %>
+    <h2 onclick="location.href= '<%= perusal_new_path %>'">
+      New Perusal
+      <i class="fa fa-search-plus fa-2x" ></i>
+    </h2>
+
     <%= render 'super/new' %>
 
     <br><br><br>

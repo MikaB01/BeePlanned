@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  population_size: 1
+  honeycomb_seat: 1
+  gentleness: 1
+  brood: 1
+  bees: 1
+  drone_brood_cutted: false
+  queen_seen: false
+  hive_weight: 1.5
+  remark: MyText
+  perusal_date: 2019-08-06
+
+two:
+  population_size: 1
+  honeycomb_seat: 1
+  gentleness: 1
+  brood: 1
+  bees: 1
+  drone_brood_cutted: false
+  queen_seen: false
+  hive_weight: 1.5
+  remark: MyText
+  perusal_date: 2019-08-06

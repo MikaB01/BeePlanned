@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_29_120539) do
+ActiveRecord::Schema.define(version: 2019_08_06_110544) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,6 +54,23 @@ ActiveRecord::Schema.define(version: 2019_07_29_120539) do
     t.index ["user_id"], name: "index_locations_on_user_id"
   end
 
+  create_table "perusals", force: :cascade do |t|
+    t.integer "population_size"
+    t.integer "honeycomb_seat"
+    t.integer "gentleness"
+    t.integer "brood"
+    t.integer "bees"
+    t.boolean "drone_brood_cutted"
+    t.boolean "queen_seen"
+    t.float "hive_weight"
+    t.text "remark"
+    t.date "perusal_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "hive_id"
+    t.index ["hive_id"], name: "index_perusals_on_hive_id"
+  end
+
   create_table "supers", force: :cascade do |t|
     t.integer "number"
     t.string "super_type"
@@ -80,5 +97,6 @@ ActiveRecord::Schema.define(version: 2019_07_29_120539) do
   add_foreign_key "frames", "supers"
   add_foreign_key "hives", "locations"
   add_foreign_key "locations", "users"
+  add_foreign_key "perusals", "hives"
   add_foreign_key "supers", "hives"
 end
