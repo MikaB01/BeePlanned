@@ -1,3 +1,139 @@
 // Place all the styles related to the Perusal controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue",sans-serif;
+  font-weight: lighter;
+}
+
+div.wrapper {
+  width: 100%;
+  height: 1620px;
+  background: image_url('background/BeePlanned_background2.png') no-repeat 50% 50%;
+}
+
+table.digits {
+  position: relative;
+  width: 684px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #201f1b;
+  z-index: 20;
+}
+
+table.digits tr th{
+  text-align: center;
+  width: 92px;
+}
+
+
+table.digits tr th div{
+  margin-left: auto;
+  margin-right: auto;
+  width: 22px;
+  height: 22px;
+  background-color: #f2d002;
+  border-radius: 30px;
+}
+
+table.digits tr th div:hover{
+  cursor: pointer;
+}
+
+table.digits tr th div h1{
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: -6px;
+}
+
+div.range_progress {
+  position: relative;
+  height: 10px;
+  width: 570px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -17px;
+  z-index: 10;
+}
+
+.progress_0 {
+  width: 0%;
+  background-color: red!important;
+}
+
+.progress_1 {
+  width: 20%;
+  background-color: orangered!important;
+}
+
+.progress_2 {
+  width: 40%;
+  background-color: orange!important;
+}
+
+.progress_3 {
+  width: 60%;
+  background-color: cornflowerblue!important;
+}
+
+.progress_4 {
+  width: 80%;
+  background-color: greenyellow!important;
+}
+
+.progress_5 {
+  width: 100%;
+  background-color: green!important;
+}
+
+//Slider
+.switch_queen input {
+  display:none;
+}
+.switch_queen {
+  display:inline-block;
+  width:50px;
+  height:16px;
+  margin:8px;
+  transform:translateY(50%);
+  position:relative;
+}
+
+.slider_queen {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  border-radius:30px;
+  box-shadow:0 0 0 1px #777, 0 0 1px #777;
+  cursor:pointer;
+  border:3px solid transparent;
+  overflow:hidden;
+  transition:.4s;
+}
+.slider_queen:before {
+  position:absolute;
+  content:"";
+  width:25%;
+  height:100%;
+  background: #777;
+  border-radius:30px;
+  transform:translateX(1px);
+  transition:.4s;
+}
+
+input:checked + .slider_queen:before {
+  transform:translateX(32px);
+  background:#f2d002;
+}
+input:checked + .slider_queen {
+  box-shadow:0 0 0 1px #f2d002,0 0 1px #f2d002;
+}

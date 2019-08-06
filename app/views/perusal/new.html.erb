@@ -1,2 +1,93 @@
-<h1>Perusal#new</h1>
-<p>Find me in app/views/perusal/new.html.erb</p>
+<%= javascript_include_tag "perusal", "data-turbolinks-track" => true  %>
+
+<% @id_name = "" %>
+
+<div class="wrapper">
+
+  <%= render 'nav' %>
+
+  <div style="height: 190px"></div>
+
+  <div class="row">
+
+    <div class="col"></div>
+
+    <div class="col" style="max-width: 684px">
+
+      <%= form_with model: @perusal, :url => '/perusal',class: 'transparent', local: true do |f| %>
+
+        <h3 style="color: #f2d002; text-align: left">Behavior:</h3>
+
+        <br>
+
+        <% @id_name = "population_size" %>
+        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Population size:</h5>
+        <%= render 'progress_selector' %>
+
+        <br>
+
+        <% @id_name = "honeycomb_seat" %>
+        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Honeycomb Seat:</h5>
+        <%= render 'progress_selector' %>
+
+        <br>
+
+        <% @id_name = "gentleness" %>
+        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Gentleness:</h5>
+        <%= render 'progress_selector' %>
+
+        <br><br>
+
+        <h3 style="color: #f2d002; text-align: left">Vigor:</h3>
+
+        <br>
+
+        <% @id_name = "brood" %>
+        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Brood:</h5>
+        <%= render 'progress_selector' %>
+
+        <br>
+
+        <% @id_name = "bees" %>
+        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Bees:</h5>
+        <%= render 'progress_selector' %>
+
+        <br><br>
+
+        <h3 style="color: #f2d002; text-align: left">Various:</h3>
+
+        <br>
+
+        <h5 id="drone_brood_cutted_no" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Drone brood cut: No</h5>
+        <h5 id="drone_brood_cutted_yes" class="hidden" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Drone brood cut: Yes</h5>
+        <label class="switch_queen" style="margin-bottom: 20px; margin-top: -5px; margin-left: 45px">
+          <input type="checkbox" id="drone_brood_cutted_input">
+          <span class="slider_queen"></span>
+        </label>
+
+        <br><br>
+
+        <h5 id="queen_no" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Queen seen: No</h5>
+        <h5 id="queen_yes" class="hidden" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Queen seen: Yes</h5>
+        <label class="switch_queen" style="margin-bottom: 20px; margin-top: -5px; margin-left: 45px">
+          <input type="checkbox" id="queen_seen_input">
+          <span class="slider_queen"></span>
+        </label>
+
+        <br><br>
+
+        <div style="text-align: center">
+          <div class="actions">
+            <%= f.submit "Add Perusal", class: 'btn', type: 'submit', id: 'add_perusal_submit'%>
+          </div>
+        </div>
+
+      <% end %>
+
+    </div>
+
+    <div class="col"></div>
+
+  </div>
+
+</div>
