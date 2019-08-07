@@ -63,6 +63,10 @@ div.range_progress {
   z-index: 10;
 }
 
+div #new_perusal_comb h2:hover {
+  text-decoration: underline;
+}
+
 .progress_0 {
   width: 0%;
   background-color: red!important;
