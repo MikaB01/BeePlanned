@@ -10,7 +10,7 @@
   <div style="text-align: center">
 
     <%= render 'show_hive_comb' %>
-    <h2 onclick="location.href= '<%= perusal_new_path %>'">
+    <h2 onclick="location.href= '<%= perusal_new_path(:hive_id => @hive.id) %>'">
       New Perusal
       <i class="fa fa-search-plus fa-2x" ></i>
     </h2>

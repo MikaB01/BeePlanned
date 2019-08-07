@@ -1,5 +1,6 @@
 class PerusalController < ApplicationController
   def new
+    @hive = Hive.find(params[:hive_id])
   end
 
   def show

@@ -10,6 +10,7 @@ $(document).ready(function() {
                         document.getElementById(id_names[id_index] + '_progressbar').classList.remove('progress_' + j);
                 }
                 document.getElementById(id_names[id_index] + '_progressbar').classList.add('progress_' + i);
+                document.getElementById(id_names[id_index]).value = i;
             });
         }
     }

@@ -23,18 +23,21 @@
         <% @id_name = "population_size" %>
         <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Population size:</h5>
         <%= render 'progress_selector' %>
+        <%= f.hidden_field :population_size, value: 0 %>
 
         <br>
 
         <% @id_name = "honeycomb_seat" %>
         <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Honeycomb Seat:</h5>
         <%= render 'progress_selector' %>
+        <%= f.hidden_field :honeycomb_seat, value: 0 %>
 
         <br>
 
         <% @id_name = "gentleness" %>
         <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Gentleness:</h5>
         <%= render 'progress_selector' %>
+        <%= f.hidden_field :gentleness, value: 0 %>
 
         <br><br>
 
@@ -45,12 +48,14 @@
         <% @id_name = "brood" %>
         <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Brood:</h5>
         <%= render 'progress_selector' %>
+        <%= f.hidden_field :brood, value: 0 %>
 
         <br>
 
         <% @id_name = "bees" %>
         <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Bees:</h5>
         <%= render 'progress_selector' %>
+        <%= f.hidden_field :bees, value: 0 %>
 
         <br><br>
 
@@ -61,7 +66,8 @@
         <h5 id="drone_brood_cutted_no" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Drone brood cut: No</h5>
         <h5 id="drone_brood_cutted_yes" class="hidden" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Drone brood cut: Yes</h5>
         <label class="switch_queen" style="margin-bottom: 20px; margin-top: -5px; margin-left: 45px">
-          <input type="checkbox" id="drone_brood_cutted_input">
+          <%= f.check_box :drone_brood_cutted, id: 'drone_brood_cutted_input'%>
+          <!--input type="checkbox" id="drone_brood_cutted_input"-->
           <span class="slider_queen"></span>
         </label>
 
@@ -70,15 +76,33 @@
         <h5 id="queen_no" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Queen seen: No</h5>
         <h5 id="queen_yes" class="hidden" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Queen seen: Yes</h5>
         <label class="switch_queen" style="margin-bottom: 20px; margin-top: -5px; margin-left: 45px">
-          <input type="checkbox" id="queen_seen_input">
+          <%= f.check_box :queen_seen, id: 'queen_seen_input'%>
+          <!--input type="checkbox" id="queen_seen_input"-->
           <span class="slider_queen"></span>
         </label>
 
         <br><br>
 
+        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Hive weight:</h5>
+        <%= f.number_field :hive_weight, step: 0.05, class: 'transparent', placeholder: '... kg', style: 'border: 2px #f2d002 solid; border-radius: 10px; margin-left: 45px; color: #f2d002; text-align: center; width: 100px' %>
+
+        <br><br><br>
+
+        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Remark:</h5>
+        <%= f.text_area :remark, class: 'transparent', placeholder: 'Space for remarks...', style: 'border: 2px #f2d002 solid; border-radius: 10px; margin-left: 45px; color: #f2d002; width: 639px; height: 80px'%>
+
+        <br><br>
+
+        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Perusal date:</h5>
+        <%= f.date_field :perusal_date, :value => Time.now.strftime('%Y-%m-%d'), class: 'transparent', style: 'border: 2px #f2d002 solid; border-radius: 10px; margin-left: 45px; color: #f2d002; text-align: center;' %>
+
+        <%= f.hidden_field :hive_id, value: @hive.id %>
+
+        <br><br>
+
         <div style="text-align: center">
           <div class="actions">
-            <%= f.submit "Add Perusal", class: 'btn', type: 'submit', id: 'add_perusal_submit'%>
+            <%= f.submit "Add Perusal", class: 'btn', type: 'submit', id: 'add_perusal_submit', style: 'margin-left: 45px'%>
           </div>
         </div>
 
