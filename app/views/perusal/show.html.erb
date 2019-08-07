@@ -1,2 +1,52 @@
-<h1>Perusal#show</h1>
-<p>Find me in app/views/perusal/show.html.erb</p>
+<%= javascript_include_tag "perusal", "data-turbolinks-track" => true  %>
+
+<div class="wrapper">
+
+  <%= render 'nav' %>
+
+  <div style="height: 190px"></div>
+
+  <div class="row">
+
+    <div class="col"></div>
+
+    <div class="col" style="background-color: #201f1b; border: 3px #f2d002 solid; border-radius: 15px">
+
+      <h2 style="color: #f2d002; text-align: center; margin-top: 25px">All Perusals:</h2>
+      <hr class="my-4" style="background-color: #f2d002; margin-top: -20px;">
+
+      <table class="all_perusal" id="show_all_perusal_table" style="margin-top: -20px">
+
+        <tr class="top" id="show_all_perusal_table_th" style="color: #f2d002">
+          <th>Day</th>
+          <th>Month</th>
+          <th>Year</th>
+        </tr>
+
+        <% @perusals.each do |perusal| %>
+          <tr onclick="href= '<%= perusal_path(perusal.id) %>'" class="perusal_table_cell reset_all">
+
+            <td>
+              <div class="row">
+                <div class="col-4">
+                  <%= perusal.perusal_date.strftime("%d") %>
+                </div>
+                <div class="col" style="text-align: left">
+                  <%= perusal.perusal_date.strftime("%A") %>
+                </div>
+              </div>
+            </td>
+
+            <td><%= perusal.perusal_date.strftime("%B") %></td>
+            <td><%= perusal.perusal_date.strftime("%Y") %></td>
+          </tr>
+        <% end %>
+
+      </table>
+    </div>
+
+    <div class="col"></div>
+
+  </div>
+
+</div>

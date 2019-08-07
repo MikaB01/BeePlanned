@@ -67,6 +67,10 @@ div #new_perusal_comb h2:hover {
   text-decoration: underline;
 }
 
+div #show_all_perusal_comb h2:hover {
+  text-decoration: underline;
+}
+
 .progress_0 {
   width: 0%;
   background-color: red!important;
@@ -140,4 +144,41 @@ input:checked + .slider_queen:before {
 }
 input:checked + .slider_queen {
   box-shadow:0 0 0 1px #f2d002,0 0 1px #f2d002;
+}
+
+//Table
+table.all_perusal {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+table#show_all_perusal_table {
+  max-width: 900px;
+  font-size: 18px;
+}
+
+table.all_perusal td {
+  padding: 5px 12px;
+  border-bottom: 1px solid #f2d002;
+  border-right: 1px solid #f2d002;
+  color: #777;
+  width: 300px;
+}
+
+table.all_perusal th { padding: 15px; }
+table.all_perusal th { border-bottom: 1px solid #f2d002; }
+table.all_perusal tr:last-child td:first-child { border-bottom-left-radius:10px; }
+table.all_perusal tr:last-child td:last-child { border-bottom-right-radius:10px; }
+table.all_perusal tr td:first-child { border-left: 1px solid #f2d002; }
+table.all_perusal tr:first-child td { border-top: 1px solid #f2d002; }
+table.all_perusal tr:first-child td:first-child { border-top-left-radius:10px }
+table.all_perusal tr:first-child td:last-child { border-top-right-radius:10px }
+
+table#show_all_perusal_table tr:hover td{
+  color: #f2d002 !important;
 }

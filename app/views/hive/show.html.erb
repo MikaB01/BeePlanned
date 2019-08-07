@@ -9,9 +9,17 @@
 
   <div style="text-align: center">
 
-    <%= render 'show_hive_comb' %>
-
-    <%= render 'new_perusal_comb' %>
+    <div class="row">
+      <div class="col" style="padding: 0; margin-left: 60px; margin-top: 102px">
+        <%= render 'new_perusal_comb' %>
+      </div>
+      <div class="col" id="col_show_hive_comb" style="max-width: 106px; padding: 0">
+        <%= render 'show_hive_comb' %>
+      </div>
+      <div class="col" style="padding: 0; margin-left: 60px; margin-top: 102px">
+        <%= render :partial => 'show_all_perusal_comb' %>
+      </div>
+    </div>
 
     <br><br><br>
 

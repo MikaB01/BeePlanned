@@ -109,6 +109,12 @@ $(document).ready(function() {
         document.getElementById('hive_number_unzoomed').classList.add('show');
         document.getElementById('hive_number_unzoomed').classList.remove('hidden');
         document.getElementById('new_super').classList.remove("hidden");
+        $('#col_show_hive_comb').css("max-width", "106px");
+        $('#img_show_hive').css("margin-left", "-67px");
+        $('#show_hive_comb').css("margin-bottom", "0");
+        document.getElementById('new_perusal_comb').classList.remove("hidden");
+        document.getElementById('show_all_perusal_comb').classList.remove("hidden");
+        document.getElementById('frame_types').classList.remove("hidden");
     });
 
     $('#close_add_hive_form').unbind("click").click(function () {
@@ -163,11 +169,17 @@ $(document).ready(function() {
     }
 
     $('#hive_number_unzoomed').unbind("click").click(function () {
+        document.getElementById('new_perusal_comb').classList.add("hidden");
+        document.getElementById('show_all_perusal_comb').classList.add("hidden");
+        document.getElementById('frame_types').classList.add("hidden");
         switch_active_class(document.getElementById('hive_number_unzoomed'), 'show', 'hide');
         document.getElementById('hive_number_unzoomed').classList.add('hidden');
         switch_active_class(document.getElementById('img_show_hive'), 'zoomed_show', 'unzoomed_show');
         switch_active_class(document.getElementById('show_hive_table'), 'show_form', 'hide');
         document.getElementById('new_super').classList.add("hidden");
+        $('#col_show_hive_comb').css("max-width", "400px");
+        $('#img_show_hive').css("margin-left", "0");
+        $('#show_hive_comb').css("margin-bottom", "150px");
     });
 
 });
