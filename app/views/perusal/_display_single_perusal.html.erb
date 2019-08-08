@@ -1,8 +1,57 @@
-<% @perusals.each do |perusal| %>
+<% @previous_id %>
+<% @next_id %>
 
-  <div class="hidden" id="display_single_perusal_<%= perusal.id %>" style="background-color: #201f1b; border: 3px #f2d002 solid; border-radius: 15px; padding: 25px">
+<% @perusals.each_with_index do |perusal, index| %>
 
-    <h2 style="color: #f2d002; text-align: center; margin-top: 25px"><%= perusal.perusal_date %></h2>
+  <% @perusals.each_with_index do |p, i| %>
+    <% if index == 0 %>
+
+      <% if i == @perusals.count-1 %>
+        <% @previous_id = p.id %>
+      <% elsif i == 1 %>
+        <% @next_id = p.id%>
+      <% end %>
+
+    <% elsif index == @perusals.count-1 %>
+
+      <% if i == @perusals.count-2 %>
+        <% @previous_id = p.id %>
+      <% elsif i == 0 %>
+        <% @next_id = p.id%>
+      <% end %>
+
+    <% else %>
+
+      <% if i == index-1 %>
+        <% @previous_id = p.id %>
+      <% elsif i == index+1%>
+        <% @next_id = p.id%>
+      <% end %>
+
+    <% end %>
+
+  <% end %>
+
+  <div class="hidden perusals" id="display_single_perusal_<%= perusal.id %>" style="background-color: #201f1b; border: 3px #f2d002 solid; border-radius: 15px; padding: 25px">
+
+    <div class="row">
+
+      <div class="col" style="color: #f2d002; text-align: left; margin-top: 25px; font-size: 26px" id="previous_arrow">
+        <div data-perusal-id="<%= @previous_id %>" class="previous_div">
+          <i class="fa fa-arrow-left"></i> Previous
+        </div>
+      </div>
+
+      <div class="col"><h2 style="color: #f2d002; text-align: center; margin-top: 25px"><%= perusal.perusal_date %></h2></div>
+
+      <div class="col" style="color: #f2d002; text-align: right; margin-top: 25px; font-size: 26px" id="next_arrow">
+        <div data-perusal-id="<%= @next_id %>" class="next_div">
+          Next <i class="fa fa-arrow-right"></i>
+        </div>
+      </div>
+
+    </div>
+
     <hr class="my-4" style="background-color: #f2d002; margin-top: -20px;">
 
     <div class="row">
@@ -13,21 +62,21 @@
         <br>
 
         <% @progress_value = perusal.population_size %>
-        <% @id_name = "population_size" %>
+        <% @id_name = "population_size_" + perusal.id.to_s %>
         <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Population size:</h5>
         <%= render 'progress_selector_show' %>
 
         <br>
 
         <% @progress_value = perusal.honeycomb_seat %>
-        <% @id_name = "honeycomb_seat" %>
+        <% @id_name = "honeycomb_seat" + perusal.id.to_s %>
         <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Honeycomb Seat:</h5>
         <%= render 'progress_selector_show' %>
 
         <br>
 
         <% @progress_value = perusal.gentleness %>
-        <% @id_name = "gentleness" %>
+        <% @id_name = "gentleness" + perusal.id.to_s %>
         <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Gentleness:</h5>
         <%= render 'progress_selector_show' %>
 
@@ -38,14 +87,14 @@
         <br>
 
         <% @progress_value = perusal.brood %>
-        <% @id_name = "brood" %>
+        <% @id_name = "brood" + perusal.id.to_s %>
         <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Brood:</h5>
         <%= render 'progress_selector_show' %>
 
         <br>
 
         <% @progress_value = perusal.bees %>
-        <% @id_name = "bees" %>
+        <% @id_name = "bees" + perusal.id.to_s %>
         <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Bees:</h5>
         <%= render 'progress_selector_show' %>
       </div>
@@ -55,33 +104,31 @@
 
         <br>
 
-        <h5 id="drone_brood_cutted_no" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Drone brood cut: No</h5>
-        <h5 id="drone_brood_cutted_yes" class="hidden" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Drone brood cut: Yes</h5>
-        <label class="switch_queen" style="margin-bottom: 20px; margin-top: -5px; margin-left: 45px">
-          <!--input type="checkbox" id="drone_brood_cutted_input"-->
-          <span class="slider_queen"></span>
-        </label>
+        <% if perusal.drone_brood_cutted %>
+          <h5 id="drone_brood_cutted_yes" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Drone brood cut: Yes</h5>
+        <% else %>
+          <h5 id="drone_brood_cutted_no" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Drone brood cut: No</h5>
+        <% end %>
 
         <br><br>
 
-        <h5 id="queen_no" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Queen seen: No</h5>
-        <h5 id="queen_yes" class="hidden" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Queen seen: Yes</h5>
-        <label class="switch_queen" style="margin-bottom: 20px; margin-top: -5px; margin-left: 45px">
-          <!--input type="checkbox" id="queen_seen_input"-->
-          <span class="slider_queen"></span>
-        </label>
+        <% if perusal.queen_seen %>
+          <h5 id="queen_yes" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Queen seen: Yes</h5>
+        <% else %>
+          <h5 id="queen_no" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Queen seen: No</h5>
+        <% end %>
 
         <br><br>
 
-        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Hive weight:</h5>
+        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Hive weight: <%= perusal.hive_weight %> kg</h5>
 
-        <br><br><br>
+        <br>
 
         <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Remark:</h5>
+        <p style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">
+          <%= perusal.remark %>
+        </p>
 
-        <br><br>
-
-        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Perusal date:</h5>
       </div>
 
     </div>

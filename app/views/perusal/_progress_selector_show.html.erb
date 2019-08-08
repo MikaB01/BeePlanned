@@ -18,5 +18,8 @@
 <br>
 
 <script>
-  document.getElementById('<%= @id_name %>_progressbar').classList.add('progress_<%= @progress_value %>');
+  $(document).ready(function() {
+      console.log(<%= @progress_value %>);
+      document.getElementById('<%= @id_name %>_progressbar').classList.add('progress_<%= @progress_value %>');
+  });
 </script>

@@ -43,7 +43,7 @@ table.digits tr th div{
   border-radius: 30px;
 }
 
-table.digits tr th div:hover{
+table.digits tr th div.hov:hover{
   cursor: pointer;
 }
 
@@ -68,6 +68,14 @@ div #new_perusal_comb h2:hover {
 }
 
 div #show_all_perusal_comb h2:hover {
+  text-decoration: underline;
+}
+
+div #previous_arrow:hover {
+  text-decoration: underline;
+}
+
+div #next_arrow:hover {
   text-decoration: underline;
 }
 
@@ -158,7 +166,7 @@ table.all_perusal {
 }
 
 table#show_all_perusal_table {
-  max-width: 900px;
+  width: 600px;
   font-size: 18px;
   table-layout: fixed;
 }
@@ -168,10 +176,10 @@ table.all_perusal td {
   border-bottom: 1px solid #f2d002;
   border-right: 1px solid #f2d002;
   color: #777;
-  width: 300px;
+  width: 175px;
 }
 
-table.all_perusal th {width: 300px;}
+table.all_perusal th {width: 175px;}
 
 table.all_perusal th { padding: 15px; }
 table.all_perusal th { border-bottom: 1px solid #f2d002; }
@@ -185,7 +193,7 @@ table#show_all_perusal_table tr:hover td{
 }
 
 table tbody.scroll {
-  max-width: 900px;
+  width: 600px;
   display:block;
   overflow: auto;
   height: 300px;

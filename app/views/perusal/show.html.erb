@@ -13,7 +13,7 @@
 
       <div class="col"></div>
 
-      <div class="col-6" style="background-color: #201f1b; border: 3px #f2d002 solid; border-radius: 15px">
+      <div class="col" style="background-color: #201f1b; border: 3px #f2d002 solid; border-radius: 15px">
 
         <h2 style="color: #f2d002; text-align: center; margin-top: 25px">All Perusals:</h2>
         <hr class="my-4" style="background-color: #f2d002; margin-top: -20px;">
@@ -30,15 +30,15 @@
 
           <tbody class="scroll">
           <% @perusals.each do |perusal| %>
-            <tr onclick="perusal_click(<%= perusal.id %>)" class="perusal_table_cell reset_all">
+            <tr data-perusal-id="<%= perusal.id %>" class="perusal_table_cell reset_all">
 
               <td>
                 <div class="row">
-                  <div class="col-4">
+                  <div class="col-2">
                     <%= perusal.perusal_date.strftime("%d") %>
                   </div>
                   <div class="col" style="text-align: left">
-                    <%= perusal.perusal_date.strftime("%A") %>
+                    - &nbsp;<%= perusal.perusal_date.strftime("%A") %>
                   </div>
                 </div>
               </td>
@@ -63,13 +63,3 @@
   </div>
 
 </div>
-
-<script>
-  function perusal_click(id) {
-      <% @perusals.each do |perusal| %>
-        if (!document.getElementById('display_single_perusal_<%= perusal.id %>').classList.contains('hidden'))
-        document.getElementById('display_single_perusal_<%= perusal.id %>').classList.add('hidden');
-      <% end %>
-      document.getElementById('display_single_perusal_' + id).classList.remove('hidden');
-  }
-</script>

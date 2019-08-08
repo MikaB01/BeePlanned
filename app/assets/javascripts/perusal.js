@@ -37,4 +37,31 @@ $(document).ready(function() {
         }
     });
 
+    $('.perusal_table_cell').unbind("click").click(function (e) {
+        let perusals = document.getElementsByClassName('perusals');
+        let id = e.target.closest("tr").getAttribute('data-perusal-id');
+        Array.prototype.forEach.call(perusals, function(p) {
+            p.classList.add('hidden');
+        });
+        document.getElementById('display_single_perusal_' + id).classList.remove('hidden');
+    });
+
+    $('.previous_div').unbind("click").click(function (e) {
+        let perusals = document.getElementsByClassName('perusals');
+        let id = e.target.closest("div").getAttribute('data-perusal-id');
+        Array.prototype.forEach.call(perusals, function(p) {
+            p.classList.add('hidden');
+        });
+        document.getElementById('display_single_perusal_' + id).classList.remove('hidden');
+    });
+
+    $('.next_div').unbind("click").click(function (e) {
+        let perusals = document.getElementsByClassName('perusals');
+        let id = e.target.closest("div").getAttribute('data-perusal-id');
+        Array.prototype.forEach.call(perusals, function(p) {
+            p.classList.add('hidden');
+        });
+        document.getElementById('display_single_perusal_' + id).classList.remove('hidden');
+    });
+
 });
