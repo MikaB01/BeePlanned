@@ -1,0 +1,90 @@
+<% @perusals.each do |perusal| %>
+
+  <div class="hidden" id="display_single_perusal_<%= perusal.id %>" style="background-color: #201f1b; border: 3px #f2d002 solid; border-radius: 15px; padding: 25px">
+
+    <h2 style="color: #f2d002; text-align: center; margin-top: 25px"><%= perusal.perusal_date %></h2>
+    <hr class="my-4" style="background-color: #f2d002; margin-top: -20px;">
+
+    <div class="row">
+
+      <div class="col" style="float: left">
+        <h3 style="color: #f2d002; text-align: left">Behavior:</h3>
+
+        <br>
+
+        <% @progress_value = perusal.population_size %>
+        <% @id_name = "population_size" %>
+        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Population size:</h5>
+        <%= render 'progress_selector_show' %>
+
+        <br>
+
+        <% @progress_value = perusal.honeycomb_seat %>
+        <% @id_name = "honeycomb_seat" %>
+        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Honeycomb Seat:</h5>
+        <%= render 'progress_selector_show' %>
+
+        <br>
+
+        <% @progress_value = perusal.gentleness %>
+        <% @id_name = "gentleness" %>
+        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Gentleness:</h5>
+        <%= render 'progress_selector_show' %>
+
+        <br><br>
+
+        <h3 style="color: #f2d002; text-align: left">Vigor:</h3>
+
+        <br>
+
+        <% @progress_value = perusal.brood %>
+        <% @id_name = "brood" %>
+        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Brood:</h5>
+        <%= render 'progress_selector_show' %>
+
+        <br>
+
+        <% @progress_value = perusal.bees %>
+        <% @id_name = "bees" %>
+        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Bees:</h5>
+        <%= render 'progress_selector_show' %>
+      </div>
+
+      <div class="col" style="float: left">
+        <h3 style="color: #f2d002; text-align: left">Various:</h3>
+
+        <br>
+
+        <h5 id="drone_brood_cutted_no" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Drone brood cut: No</h5>
+        <h5 id="drone_brood_cutted_yes" class="hidden" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Drone brood cut: Yes</h5>
+        <label class="switch_queen" style="margin-bottom: 20px; margin-top: -5px; margin-left: 45px">
+          <!--input type="checkbox" id="drone_brood_cutted_input"-->
+          <span class="slider_queen"></span>
+        </label>
+
+        <br><br>
+
+        <h5 id="queen_no" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Queen seen: No</h5>
+        <h5 id="queen_yes" class="hidden" style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 10px">Queen seen: Yes</h5>
+        <label class="switch_queen" style="margin-bottom: 20px; margin-top: -5px; margin-left: 45px">
+          <!--input type="checkbox" id="queen_seen_input"-->
+          <span class="slider_queen"></span>
+        </label>
+
+        <br><br>
+
+        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Hive weight:</h5>
+
+        <br><br><br>
+
+        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Remark:</h5>
+
+        <br><br>
+
+        <h5 style="color: #f2d002; text-align: left; margin-left: 45px; margin-bottom: 18px">Perusal date:</h5>
+      </div>
+
+    </div>
+  </div>
+
+<% end %>

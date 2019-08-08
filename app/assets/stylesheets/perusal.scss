@@ -160,6 +160,7 @@ table.all_perusal {
 table#show_all_perusal_table {
   max-width: 900px;
   font-size: 18px;
+  table-layout: fixed;
 }
 
 table.all_perusal td {
@@ -170,15 +171,27 @@ table.all_perusal td {
   width: 300px;
 }
 
+table.all_perusal th {width: 300px;}
+
 table.all_perusal th { padding: 15px; }
 table.all_perusal th { border-bottom: 1px solid #f2d002; }
 table.all_perusal tr:last-child td:first-child { border-bottom-left-radius:10px; }
 table.all_perusal tr:last-child td:last-child { border-bottom-right-radius:10px; }
 table.all_perusal tr td:first-child { border-left: 1px solid #f2d002; }
 table.all_perusal tr:first-child td { border-top: 1px solid #f2d002; }
-table.all_perusal tr:first-child td:first-child { border-top-left-radius:10px }
-table.all_perusal tr:first-child td:last-child { border-top-right-radius:10px }
 
 table#show_all_perusal_table tr:hover td{
   color: #f2d002 !important;
 }
+
+table tbody.scroll {
+  max-width: 900px;
+  display:block;
+  overflow: auto;
+  height: 300px;
+}
+
+table thead tr {
+  display: block;
+}
+

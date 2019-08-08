@@ -6,7 +6,7 @@ class PerusalController < ApplicationController
   def show
     @hive = Hive.find(params[:hive_id])
     @perusals = Perusal.where(hive_id: @hive.id)
-    @perusals = @perusals.sort_by { |per |per.perusal_date  }
+    @perusals = @perusals.sort_by { |per |per.perusal_date }.reverse
   end
 
   def create
